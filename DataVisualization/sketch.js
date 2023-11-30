@@ -15,6 +15,8 @@ function setup() {
 	var quizMarks = studentData.getColumn('quiz');
 	var projectMarks = studentData.getColumn('project')
 	myScatter.setupAxis(0,100,0,100,10,10);
+	myScatter.addDataPoints(quizMarks,projectMarks,3,'red');
+	myScatter.lineOfBestFit(quizMarks,projectMarks,'blue')
 }
 
 function draw() {
@@ -145,10 +147,10 @@ function Scatter(x, y, width, height) {
 			var sumXY = 0;
 			var sumX2 = 0;
 			for (var i = 0; i < xValues.length; i++) {
-				sumX += xValues[i];
-				sumY += yValues[i];
-				sumXY += xValues[i] * yValues[i];
-				sumX2 += xValues[i] * xValues[i];
+				sumX += parseFloat(xValues[i]);
+				sumY += parseFloat(yValues[i]);
+				sumXY += parseFloat(xValues[i]) * parseFloat(yValues[i]);
+				sumX2 += parseFloat(xValues[i]) * parseFloat(xValues[i]);
 			}
 
 			var m = (xValues.length * sumXY - sumX * sumY) / (xValues.length * sumX2 -
