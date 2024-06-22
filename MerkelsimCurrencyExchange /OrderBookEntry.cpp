@@ -14,3 +14,16 @@ OrderBookEntry::OrderBookEntry(
 {
     
 }
+
+OrderBookType OrderBookEntry::stringToOrderBookType(std::string s)
+{
+    if (s == "ask")
+    {
+        return OrderBookType::ask;
+    }
+    if (s == "bid")
+    {
+        return OrderBookType::bid;
+    }
+    return OrderBookType::unknown;
+}

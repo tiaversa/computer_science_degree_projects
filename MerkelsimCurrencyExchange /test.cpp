@@ -39,9 +39,16 @@ int main()
                 std::cout << "Bad line " << line << std::endl;
                 continue;
             }
-            double price = std::stod(tokens[3]);
-            double amount = std::stod(tokens[4]);
-            std::cout << price << ':' << amount << std::endl;
+            try {
+                double price = std::stod(tokens[3]);
+                double amount = std::stod(tokens[4]);
+                std::cout << price << ':' << amount << std::endl;
+            } catch(std::exception& e){
+                std::cout << "Bad float! " << tokens[3] << std::endl;
+                std::cout << "Bad float! " << tokens[4] << std::endl;
+                break;
+            }
+            
         }
         csvFile.close();
     }
