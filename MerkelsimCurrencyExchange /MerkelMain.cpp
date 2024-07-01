@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include "OrderBookEntry.h"
+#include "CSVReader.h"
 
 // constructor
 MerkelMain::MerkelMain()
@@ -12,7 +13,7 @@ MerkelMain::MerkelMain()
 void MerkelMain::init()
 {
     int input;
-    loadOrderBook();
+    currentTime = OrderBook.getEarliestTime();
     while (true)
     {
         printMenu();
@@ -20,17 +21,6 @@ void MerkelMain::init()
         processUserOption(input);
     }
 
-}
-
-void MerkelMain::loadOrderBook()
-{
-    orders.push_back(OrderBookEntry{5319.450228,
-                                    5319.450228,
-                                    "2020/03/17 17:01:24.884492",
-                                    "ETH/BTC",
-                                    OrderBookType::bid
-                                    }
-                    );
 }
 
 void MerkelMain::printMenu()
@@ -49,6 +39,8 @@ void MerkelMain::printMenu()
     std::cout << "6: Continue" << std::endl;
 
     std::cout << "====================" << std::endl;
+
+    std::cout << "Current time is: " << currentTime << std::endl;
 }
 
 int MerkelMain::getUserOption()
@@ -67,7 +59,14 @@ void MerkelMain::printHelp()
 
 void MerkelMain::printMarketStats()
 {
-    std::cout << "Order Book Contains: " << orders.size() << " entries" << std::endl;
+    for (std::string const p : OrderBook.getKnowProducts())
+    {
+        std::cout << "Product: " << p << std::endl;
+        std::vector<OrderBookEntry> entries = OrderBook.getOrders(OrderBookType::ask, p, currentTime);
+        std::cout << "ASKS seen: "<< entries.size() << std::endl;
+        std::cout << "Max ask: "<< OrderBook::getHighPrice(entries) << std::endl;
+        std::cout << "Min ask: "<< OrderBook::getLowPrice(entries) << std::endl;
+    }
 }
 
 void MerkelMain::enteroffer()
@@ -88,6 +87,7 @@ void MerkelMain::printWallet()
 void MerkelMain::goToNextTimeFrame()
 {
     std::cout << "Go to next time frame..." << std::endl;
+    currentTime = OrderBook.getNextTime(currentTime);
 }
 /** like this */
 void MerkelMain::processUserOption(int userOption)

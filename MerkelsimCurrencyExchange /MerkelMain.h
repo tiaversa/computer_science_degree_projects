@@ -2,6 +2,7 @@
 #define MERKELMAIN_H
 #include <vector>
 #include "OrderBookEntry.h"
+#include "OrderBook.h"
 #pragma once
 
 class MerkelMain
@@ -12,7 +13,6 @@ public:
     void init();
     
 private:
-    void loadOrderBook();
     void printMenu();
     int getUserOption();
     void printHelp();
@@ -23,7 +23,9 @@ private:
     void goToNextTimeFrame();
     void processUserOption(int userOption);
 
-    std::vector<OrderBookEntry> orders;
+    std::string currentTime;
+
+    OrderBook OrderBook{"projectcsv.csv"};
     
 };
 

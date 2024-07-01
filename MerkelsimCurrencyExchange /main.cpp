@@ -7,7 +7,6 @@
 
 int main()
 {
-    // MerkelMain app{};
-    // app.init();
-    CSVReader::readCSV("projectcsv.csv");
+    MerkelMain app{};
+    app.init();
 }
