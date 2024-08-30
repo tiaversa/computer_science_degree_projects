@@ -4,7 +4,7 @@ z-index track:
 4. Navagation bar
 
 
-Image:
+Images:
 https://www.goodfreephotos.com/vector-images/girl-power-vector-clipart.png.php
 https://www.pngegg.com/en/png-drrtj/download
 https://www.pngegg.com/en/png-bllju#google_vignette
@@ -37,3 +37,6 @@ https://www.pngegg.com/en/png-wlyjb/download
 https://www.pngegg.com/en/png-wlygd/download
 https://www.pngegg.com/en/png-yjldx/download
 https://www.pngegg.com/en/png-bzdmb/download
+
+Fonts:
+https://www.1001fonts.com/ransom-note-fonts.html?page=2

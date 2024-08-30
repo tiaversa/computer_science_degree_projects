@@ -1,5 +1,3 @@
-console.log('hi');
-
 const sections = ['about', 'deexplain', 'skills', 'projects', 'volunteer', 'footer'];
 
 sections.forEach(sectionId => {
@@ -70,3 +68,4 @@ form.addEventListener("focus", function(event){
 form.addEventListener("blur", function(event){
     event.target.style.backgroundColor = "white";
 }, true);
+
