@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
 </head>
 <body>
     <div id="progress"></div>
@@ -152,23 +153,19 @@
 
         <section id="volunteer" class="collage-section">
             <h2 class="section-title">Volunteer Work</h2>
-            <div class="project-item">
-                <h3>PyLadies</h3>
-                <h4>2023-Present</h4>
-                <p>Brief description of the project goes here.</p>
-                <div class="collage-section">
-                    <h3>See some of the work:</h3>
+            <h3>See some of the work:</h3>
+            <div id="volunteerContainer" class="project-item">
+                <script id="volunteertemplate" type="text/x-handlebars-template">
+                    {{#each volunteer_work}}
                     <div class="project-item">
-                        <h4>Hosted Event</h4>
-                        <h5>August 2024</h5>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/APWOO60Pdps?si=JbgMvD8U9hNMLBqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h3>{{project}}</h3>
+                        <h4>{{timeframe}}</h4>
+                        <h4>{{type}}</h4>
+                        <h5>{{event}}</h5>
+                        <iframe width="560" height="315" src={{media}} title={{media_title}} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
-                    <div class="project-item">
-                        <h4>Hosted Event</h4>
-                        <h5>July 2024</h5>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/HRG3qax_lbk?si=mJksOBITKSynwZ4G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
+                    {{/each}}
+                </script>
             </div>
             <div class="project-item">
                 <h3>Lego Programming With Youth</h3>

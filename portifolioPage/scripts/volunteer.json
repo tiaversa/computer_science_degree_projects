@@ -14,5 +14,13 @@
         "type":"Hosted Event",
         "media":"https://www.youtube.com/embed/HRG3qax_lbk?si=mJksOBITKSynwZ4G",
         "media_title": "YouTube video player for July 2024 event"
+    },
+    {
+        "project":"PyLadies",
+        "timeframe":"2023-Present",
+        "event":"February 2024",
+        "type":"Guided a Lesson",
+        "media":"https://www.youtube.com/embed/rA5UgkTSTjo?si=QWye2fEiRcEYkXKR",
+        "media_title": "YouTube video player for February 2024 event"
     }
 ]}
