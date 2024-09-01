@@ -96,6 +96,7 @@ ourRequest.onerror = function() {
 ourRequest.send();
 
 function createHTML(data) {
+    console.log(data);
     var rawTemplate = document.getElementById("volunteertemplate").innerHTML;
     var compiledTemplate = Handlebars.compile(rawTemplate);
     var ourGeneratedHTML = compiledTemplate(data);
