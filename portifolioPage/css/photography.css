@@ -1,0 +1,34 @@
+#photoGrid {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "photo1 photo32 photo44 photo4"
+        "photo25 photo6 photo24 photo8"
+        "photo45 photo45 photo46 photo46"
+        "photo23 photo13 photo5 photo5"
+        "photo26 photo26 photo33 photo47"
+        "photo12 photo7 photo4 photo4"
+        "photo14 photo14 photo22 photo22"
+        "photo34 photo27 photo48 photo48"
+        "photo49 photo3 photo43 photo43"
+        "photo31 photo31 photo35 photo50"
+        "photo21 photo9 photo9 photo51"
+        "photo28 photo36 photo20 photo20"
+        "photo2 photo52 photo42 photo15"
+        "photo19 photo19 photo53 photo53"
+        "photo30 photo41 photo54 photo54"
+        "photo18 photo18 photo37 photo10"
+        "photo40 photo29 photo29 photo17"
+        "photo38 photo11 photo16 photo16"
+        ;
+    justify-content: space-evenly;
+    gap: 2px;
+}
+
+.photo-item {
+    min-height: 25vh;
+    background-size: cover; 
+    background-position: center;
+}
