@@ -1,3 +1,10 @@
+var bar = document.getElementById("progress");
+window.addEventListener("scroll", function() {
+    var documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var scrollPercent = (window.scrollY / documentHeight) * 100;
+    bar.style.width = scrollPercent + '%';
+});
+
 const sections = ['about', 'deexplain', 'skills', 'projects', 'volunteer', 'footer'];
 
 sections.forEach(sectionId => {
@@ -8,25 +15,6 @@ sections.forEach(sectionId => {
     }
 });
 
-var bar = document.getElementById("progress");
-window.addEventListener("scroll", function() {
-    var documentHeight = document.documentElement.scrollHeight - window.innerHeight;
-    var scrollPercent = (window.scrollY / documentHeight) * 100;
-    bar.style.width = scrollPercent + '%';
-});
-
-var menuButton = document.getElementById("menu");
-menuButton.addEventListener("click", function() {
-    if (menuButton.style.backgroundColor === 'rgb(255, 255, 255)') {
-        menuButton.style.backgroundColor = '#000';
-        menuButton.style.color = '#fff';
-        document.getElementById("main-menu").style.display = 'table-row';
-    } else {
-        menuButton.style.backgroundColor = '#fff';
-        menuButton.style.color = '#000';
-        document.getElementById("main-menu").style.display = 'none';
-    }
-});
 
 var drawingBoard = document.getElementById("drawing-board");
 drawingBoard.addEventListener("mousemove", function(event) {
@@ -78,28 +66,28 @@ if (form) {
     }, true);
 }
 
-var ourRequest = new XMLHttpRequest();
-ourRequest.open('GET', 'https://raw.githubusercontent.com/tiaversa/computer_science_degree_projects/master/portifolioPage/scripts/volunteer.json');
-ourRequest.onload = function() {
-    if (ourRequest.status >= 200 && ourRequest.status < 400) {
-        var data = JSON.parse(ourRequest.responseText);
-        createHTML(data);
+var volunteerRequest = new XMLHttpRequest();
+volunteerRequest.open('GET', 'https://raw.githubusercontent.com/tiaversa/computer_science_degree_projects/master/portifolioPage/scripts/volunteer.json');
+volunteerRequest.onload = function() {
+    if (volunteerRequest.status >= 200 && volunteerRequest.status < 400) {
+        var volunteerData = JSON.parse(volunteerRequest.responseText);
+        createVolunteerHTML(volunteerData);
     } else {
         console.log("We connected to the server, but it returned an error.");
     }
 };
 
-ourRequest.onerror = function() {
+volunteerRequest.onerror = function() {
     console.log("Connection error");
 };
 
-ourRequest.send();
+volunteerRequest.send();
 
-function createHTML(data) {
-    console.log(data);
+function createVolunteerHTML(volunteerData) {
+    console.log(volunteerData);
     var rawTemplate = document.getElementById("volunteertemplate").innerHTML;
     var compiledTemplate = Handlebars.compile(rawTemplate);
-    var ourGeneratedHTML = compiledTemplate(data);
+    var ourGeneratedHTML = compiledTemplate(volunteerData);
 
     var volunteerContainer = document.getElementById("volunteerContainer");
     if (volunteerContainer) {

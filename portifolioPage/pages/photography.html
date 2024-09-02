@@ -8,18 +8,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Courier+Prime&family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/fonts.css">
-    <style>
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <!-- <style>
         .phot-image img{
             width: 20em;
         }
-    </style>
+    </style> -->
 </head>
 <body>
+    <nav></nav>
     <div id="photography">
         <h1>Photography</h1>
         <p>I'm a huge fun of street art and try to take this hobby quite seriously since is something I really enjoy.</p>
-<div class="phot-image"><img src="../images/photography/20180704_070227.jpg"></div>
+        <div id="photoGrid">
+        <script id="phototemplate" type="text/x-handlebars-template">
+            {{#each my_photos}}
+            <div class="proto-item">
+                <h3>{{image_name}}</h3>
+                <p>{{image_description}}</p>
+                <img src={{src}}>
+            </div>
+            {{/each}}
+        </script>
+        </div>
+<!-- <div class="phot-image"><img src="../images/photography/20180704_070227.jpg"></div>
 <div class="phot-image"><img src="../images/photography/20180704_070238.jpg"></div>
 <div class="phot-image"><img src="../images/photography/20180704_070322.jpg"></div>
 <div class="phot-image"><img src="../images/photography/20180704_071633.jpg"></div>
@@ -172,13 +187,10 @@
 <div class="phot-image"><img src="../images/photography/IMG_9144.CR2"></div>
 <div class="phot-image"><img src="../images/photography/IMG_9202.CR2"></div>
 <div class="phot-image"><img src="../images/photography/IMG_9205.CR2"></div>
-<div class="phot-image"><img src="../images/photography/IMG_9371.CR2"></div>
+<div class="phot-image"><img src="../images/photography/IMG_9371.CR2"></div> -->
     </div>
-    <div id="sewing">
-        <h1>Sewing</h1>
-        <p>This is such a relaxing hobby that allows you to stay at home and enjoy being creative with something a bit more tangible.</p>
-    </div>
-    <div id="paper_crafts"></div>
-    
+    <script src="../scripts/navBar.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/photography.js"></script>
 </body>
 </html>
