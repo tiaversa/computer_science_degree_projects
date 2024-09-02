@@ -43,3 +43,7 @@ https://www.1001fonts.com/ransom-note-fonts.html?page=2
 
 Handlebars:
 https://www.youtube.com/watch?v=WZCX-RmJN1s&list=PLLgJJsrdwhPxqkP5AgzZX9jKoKoBtRcu0&index=1
+
+
+icons:
+<a target="_blank" href="https://icons8.com/icon/yc2dJ0jTSu8L/instagram">Instagram</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>

@@ -16,3 +16,38 @@ if (nav) {
 } else {
     console.log("Nav bar doesn't work.");
 }
+
+
+footerHTML = `<section id="contact">
+<h2 class="section-title">GET IN TOUCH</h2>
+<form id="form">
+    <input type="email" placeholder="Your email">
+    <textarea placeholder="Your message"></textarea>
+    <button type="submit">SEND</button>
+</form>
+</section>
+<div class="social-icons">
+    <div class="icon" href="https://tiaversa.github.io/tiaversa/" style="background-image: url('../images/smIcons/icons8-follow-100.png');"></div>
+    <div class="icon" href="https://www.facebook.com/" style="background-image: url('../images/smIcons/icons8-facebook-100.png');"></div>
+    <div class="icon" href="https://www.instagram.com/" style="background-image: url('../images/smIcons/icons8-instagram-100.png');"></div>
+    <div class="icon" href="https://github.com/tiaversa" style="background-image: url('../images/smIcons/icons8-github-100.png');"></div>
+    <div class="icon" href="https://www.instagram.com/" style="background-image: url('../images/smIcons/icons8-medium-100.png');"></div>
+    <div class="icon" href="https://www.tumblr.com/" style="background-image: url('../images/smIcons/icons8-tumblr-100.png');"></div>
+    <div class="icon" href="https://www.youtube.com/@PyLadiesBerlin" style="background-image: url('../images/smIcons/icons8-youtube-100.png');"></div>
+    <br>
+    <p id="recognition">Recognition of link images:
+    <a target="_blank" href="https://icons8.com/icon/QOACCnLJXMkg/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>,
+    <a target="_blank" href="https://icons8.com/icon/9LB6bUNyP4yj/medium">Medium</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>,
+    <a target="_blank" href="https://icons8.com/icon/WstlpRjF3VCm/tumblr">Tumblr</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>,
+    <a target="_blank" href="https://icons8.com/icon/uZIMz8rZqfcW/youtube">YouTube</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>,
+    <a target="_blank" href="https://icons8.com/icon/QU5mfsH8tIqo/facebook">Facebook</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>,
+    <a target="_blank" href="https://icons8.com/icon/yc2dJ0jTSu8L/instagram">Instagram</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>,
+    <a target="_blank" href="https://icons8.com/icon/Uee1q1O0scBI/follow">Follow</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+</div>`
+var footer = document.getElementsByTagName("footer");
+console.log(footer);
+if (footer) {
+    footer[0].innerHTML = footerHTML;
+} else {
+    console.log("footer doesn't work.");
+}

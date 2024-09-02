@@ -84,7 +84,6 @@ volunteerRequest.onerror = function() {
 volunteerRequest.send();
 
 function createVolunteerHTML(volunteerData) {
-    console.log(volunteerData);
     var rawTemplate = document.getElementById("volunteertemplate").innerHTML;
     var compiledTemplate = Handlebars.compile(rawTemplate);
     var ourGeneratedHTML = compiledTemplate(volunteerData);

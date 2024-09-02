@@ -1,5 +1,9 @@
+header {
+    height: 100vh;
+    background-color: aliceblue;
+}
+
 #photoGrid {
-    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -21,14 +25,53 @@
         "photo30 photo41 photo54 photo54"
         "photo18 photo18 photo37 photo10"
         "photo40 photo29 photo29 photo17"
-        "photo38 photo11 photo16 photo16"
-        ;
+        "photo38 photo11 photo16 photo16";
     justify-content: space-evenly;
     gap: 2px;
+    position: relative;
+    margin: 20px;
 }
 
 .photo-item {
-    min-height: 25vh;
-    background-size: cover; 
+    min-height: 300px;
+    background-size: cover;
     background-position: center;
+    position: relative;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    transform: rotate(-0.5deg);
+}
+
+.photo-item:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.imgInfo {
+    background-color: rgba(255, 255, 255, 0.4);
+    justify-content: center;
+    align-items: center;
+    min-height: 40%;
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+}
+
+.photo-item:hover .imgInfo {
+    opacity: 1;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 9;
+}
+
+.overlay.active {
+    display: block;
 }

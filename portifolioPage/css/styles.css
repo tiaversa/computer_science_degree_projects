@@ -81,81 +81,6 @@ nav {
 }
 
 
-header {
-    text-align: center;
-    margin-bottom: 30px;
-    height: 100vh;
-    grid-area: header;
-    display: inline;
-}
-
-header img {
-    width: 100px;
-}
-
-#awesome {
-    display: none;
-    position: absolute;
-    z-index: 3;
-}
-
-#name {
-    width:max-content;
-    position: relative;
-    top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 2;
-}
-
-.name-h1 {
-    font-family: 'Freakshow1', cursive; /*'Permanent Marker', cursive; */
-    font-size: 4em;
-    margin: 0;
-    transform: rotate(-5deg);
-}
-
-.title-block {
-    font-family: 'Overconsumption', 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 3em;
-    background-color: #000;
-    color: #fff;
-    padding: 5px 15px;
-    display: inline-block;
-    transform: rotate(3deg);
-}
-
-.collage-section {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 5px 5px 0 rgba(0,0,0,0.1);
-    min-height: 100vh;
-    max-width: 1000px;
-    margin: 20px;
-}
-
-.section-title {
-    font-family: 'punk03','Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 2em;
-    margin-top: 0;
-    border-bottom: 2px solid #000;
-}
-
-.skill-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.skill-list li {
-    font-family: 'punk07','Courier Prime', monospace;
-    margin-bottom: 10px;
-    padding: 5px;
-    background-color: #FFD700;  /* Gold background for skills */
-    display: inline-block;
-    transform: rotate(-1deg);
-}
-
 .project-item {
     background-color: #E6E6FA;  /* Light purple for project items */
     padding: 10px;
@@ -179,71 +104,25 @@ form button {
     font-weight: 700;
 }
 
-/* Add some decorative elements */
-.collage-section::before,
-.collage-section::after {
-    content: "★";
-    font-size: 2em;
-    position: absolute;
-    color: #FFD700;
+
+#recognition {
+    font-size: xx-small;
 }
 
-.collage-section::before {
-    top: -7px;
-    left: -1px;
+.social-icons {
+    display:flex;
 }
 
-.collage-section::after {
-    bottom: 10px;
-    right: 10px;
-}
-
-#about {
-    grid-area: about;
-}
-
-#deexplain {
-    grid-area: deexplain;
-}
-
-#skills {
-    grid-area: skills;
-}
-
-#projects {
-    grid-area: projects;
-}
-
-#volunteer {
-    grid-area: volunteer;
-}
-
-#drawing-board {
-    height: 200px;
-}
-
-.dot {
-    height: 8px;
-    width: 8px;
-    border-radius: 4px;
-    background: black;
-    position: absolute;
-}
-
-footer {
-    grid-area: footer;
+.icon {
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-    .name {
-        font-size: 3em;
-    }
-    
-    .title-block {
-        font-size: 1.5em;
-    }
-    
     nav {
         flex-direction: column;
         align-items: center;
@@ -254,16 +133,3 @@ footer {
     }
 }
 
-
-/* Web */
-@media (min-width: 1010px){
-    main {
-        display: grid;
-        background-color: rgb(198, 91, 207, 0.4);
-        grid-template-columns: auto auto;
-        grid-template-areas:
-            "about deexplain"
-            "skills projects"
-            "volunteer volunteer";
-    }    
-}
