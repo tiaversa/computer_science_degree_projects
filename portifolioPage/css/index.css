@@ -1,9 +1,72 @@
 header {
+    position: relative;
     text-align: center;
     margin-bottom: 30px;
     height: 100vh;
     grid-area: header;
     display: inline;
+}
+
+.image_box {
+    position: relative;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    text-decoration: none;
+}
+
+#img1 {
+    position: absolute;
+    top: -5vw;
+    left: -5vw;
+    width: 110vw;
+}
+
+#img2 {
+    position: absolute;
+    top: -6vw;
+    left: -5vw;
+    width: 120vw;
+    z-index: 2;
+}
+
+#img3 {
+    position: absolute;
+    top: 0vw;
+    right: -9vw;
+    width: 43vw;
+}
+
+#img4 {
+    position: absolute;
+    top: 0vw;
+    right: -3vw;
+    width: 35vw;
+}
+
+#img5 {
+    position: absolute;
+    top: 0vw;
+    left: 2vw;
+    width: 10vw;
+}
+
+#img6 {
+    position: absolute;
+    top: 33vw;
+    left: 21vw;
+    width: 10vw;
+    transform: rotate(2deg);
+    z-index: 3;
+}
+
+#img7 {
+    position: absolute;
+    top: 18vw;
+    left: -10vw;
+    width: 35vw;
+    transform: rotate(2deg);
+    /* z-index: 3; */
 }
 
 header img {
@@ -18,7 +81,7 @@ header img {
 
 #name {
     width:max-content;
-    position: relative;
+    position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%,-50%);
     z-index: 2;
@@ -26,9 +89,11 @@ header img {
 
 .name-h1 {
     font-family: 'Freakshow1', cursive; /*'Permanent Marker', cursive; */
-    font-size: 4em;
+    font-size: 6em;
     margin: 0;
     transform: rotate(-5deg);
+    padding: 0 1vw 0 1vw;
+    background-color: rgba(255,255,255,0.4);
 }
 
 .title-block {
@@ -49,6 +114,7 @@ header img {
     min-height: 100vh;
     max-width: 1000px;
     margin: 20px;
+    z-index: 10;
 }
 
 .section-title {
@@ -68,6 +134,7 @@ header img {
     font-family: 'punk07','Courier Prime', monospace;
     margin-bottom: 10px;
     padding: 5px;
+    font-size: 2.3vw;
     background-color: #FFD700;  /* Gold background for skills */
     display: inline-block;
     transform: rotate(-1deg);
@@ -84,6 +151,27 @@ header img {
     font-size: 2em;
     position: absolute;
     color: #FFD700;
+}
+
+#volunteer img {
+    position:absolute;
+    top: -5vw;
+    right: -4vw;
+    width: 16vw;
+}
+
+#skills img {
+    position:absolute;
+    top: -5vw;
+    right: -4vw;
+    width: 16vw;
+}
+
+#projects img {
+    position:absolute;
+    top: 10vw;
+    right: 0vw;
+    width: 16vw;
 }
 
 .collage-section::before {
@@ -132,6 +220,16 @@ footer {
     grid-area: footer;
 }
 
+#contact {
+    position:relative;
+}
+
+#contact img {
+    position:absolute;
+    top: -10vw;
+    right: -30vw;
+    width: 40vw;
+}
 /* Mobile */
 @media (max-width: 768px) {
     .name {

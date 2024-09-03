@@ -37,7 +37,7 @@ nav {
     top: 0;
     right: 0;
     width: 150px;
-    z-index: 4;
+    z-index: 99;
     grid-area: nav;
 }
 
@@ -119,6 +119,29 @@ form button {
     background-size: cover;
     background-position: center;
     position: relative;
+}
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+footer {
+    font-family: 'punk02','Courier New', Courier, monospace;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /* Mobile */

@@ -10,10 +10,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Courier+Prime&family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/projects.css">
 </head>
-<body>
-    <nav></nav>
-    <footer></footer>
+<body role="document">
+    <nav role="navigation" aria-label="Main Navigation"></nav>
+    <header role="banner">
+        <div class="headerImg" role="img" aria-label="Decorative images of various graphics">
+            <img id="img1" src="../images/pngegg (38).png" alt="">
+            <img id="img2" src="../images/pngegg (32).png" alt="">
+            <img id="img3" src="../images/pngegg (36).png" alt="">
+            <img id="img4" src="../images/pngegg (37).png" alt="">
+            <img id="img5" src="../images/pngegg (2).png" alt="">
+            <img id="img6" src="../images/pngegg (14).png" alt="">
+            <img id="img7" src="../images/pngegg (34).png" alt="">
+        </div>
+        <div id="name" role="complementary" aria-label="Introduction">
+            <p>All the information here portrayed is not mine, sources are added to the annexes.</p>
+            <h1>Phojects</h1>
+        </div>
+    </header>
+    <main role="main">
+        <div class="project_grid" role="region" aria-label="Project Grid">
+            <div id="project1" class="project" role="article" aria-labelledby="project1-title">
+                <img src="../images/projects/image.png" alt="Relationship between buyers of a product and the weather">
+                <h1 id="project1-title">Weather Buyer Correlation</h1>
+                <p>Performance of research on the relationship between the selling of a product and the weather at a specific region on that space of time.</p>
+            </div>
+            <div id="project2" class="project" role="article" aria-labelledby="project2-title">
+                <img src="../images/projects/image2.png" alt="Relationship between liters sold of a product and the weather">
+                <h1 id="project2-title">Weather Intensity Correlation</h1>
+                <p>Performance of research on the relationship between the intensity of a product and the weather at a specific region on that space of time.</p>
+            </div>
+            <div id="project3" class="project" role="article" aria-labelledby="project3-title">
+                <img src="../images/projects/image4.png" alt="Labour work force">
+                <h1 id="project3-title">Research of the Labour Force</h1>
+                <p>Performed a research over the available workforce presently in countries and predicted the next 5 years of numbers.</p>
+            </div>
+            <div id="project4" class="project" role="article" aria-labelledby="project4-title">
+                <img src="../images/projects/image3.png" alt="Progress on the world goals">
+                <h1 id="project4-title">Research on the Progress of the World Goals</h1>
+                <p>Performed a research on how countries are performing under the 17 goals for a better future and made predictions on the numbers for the next year.</p>
+            </div>
+        </div>
+    </main>
+    <footer role="contentinfo"></footer>
     <script src="../scripts/navBar.js"></script>
     <script src="../scripts/main.js"></script>
 </body>

@@ -1,5 +1,6 @@
 navHTML = `<div id="menu" class="menu-button">&#9776;</div>
 <ul id="main-menu">
+    <li class="nav-item"><a href="../index.html">HOME</a></li>
     <li class="nav-item"><a href="../index.html#about">ABOUT</a></li>
     <li class="nav-item"><a href="dewritings.html">DATA ENGINEERING</br>ARTICLES</a></li>
     <li class="nav-item"><a href="../index.html#skills">SKILLS</a></li>
@@ -27,13 +28,13 @@ footerHTML = `<section id="contact">
 </form>
 </section>
 <div class="social-icons">
-    <div class="icon" href="https://tiaversa.github.io/tiaversa/" style="background-image: url('../images/smIcons/icons8-follow-100.png');"></div>
-    <div class="icon" href="https://www.facebook.com/" style="background-image: url('../images/smIcons/icons8-facebook-100.png');"></div>
-    <div class="icon" href="https://www.instagram.com/" style="background-image: url('../images/smIcons/icons8-instagram-100.png');"></div>
-    <div class="icon" href="https://github.com/tiaversa" style="background-image: url('../images/smIcons/icons8-github-100.png');"></div>
-    <div class="icon" href="https://www.instagram.com/" style="background-image: url('../images/smIcons/icons8-medium-100.png');"></div>
-    <div class="icon" href="https://www.tumblr.com/" style="background-image: url('../images/smIcons/icons8-tumblr-100.png');"></div>
-    <div class="icon" href="https://www.youtube.com/@PyLadiesBerlin" style="background-image: url('../images/smIcons/icons8-youtube-100.png');"></div>
+<div class="icon" style="background-image: url('../images/smIcons/icons8-follow-100.png');"><a href="https://tiaversa.github.io/tiaversa/" class="fill-div"></a></div>
+<div class="icon" style="background-image: url('../images/smIcons/icons8-facebook-100.png');"><a href="https://www.facebook.com/"  class="fill-div"></a></div>
+<div class="icon"  style="background-image: url('../images/smIcons/icons8-instagram-100.png');"><a href="https://www.instagram.com/" class="fill-div"></a></div>
+<div class="icon" style="background-image: url('../images/smIcons/icons8-github-100.png');"><a href="https://github.com/tiaversa" class="fill-div"></a></div>
+<div class="icon" style="background-image: url('../images/smIcons/icons8-medium-100.png');"><a href="https://www.instagram.com/" class="fill-div"></a></div>
+<div class="icon" style="background-image: url('../images/smIcons/icons8-tumblr-100.png');"><a href="https://www.tumblr.com/" class="fill-div"></a></div>
+<div class="icon" style="background-image: url('../images/smIcons/icons8-youtube-100.png');"><a href="https://www.youtube.com/@PyLadiesBerlin" class="fill-div"></a></div>
     <br>
     <p id="recognition">Recognition of link images:
     <a target="_blank" href="https://icons8.com/icon/QOACCnLJXMkg/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>,

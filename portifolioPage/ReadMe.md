@@ -47,3 +47,7 @@ https://www.youtube.com/watch?v=WZCX-RmJN1s&list=PLLgJJsrdwhPxqkP5AgzZX9jKoKoBtR
 
 icons:
 <a target="_blank" href="https://icons8.com/icon/yc2dJ0jTSu8L/instagram">Instagram</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+data resources:
+https://unstats.un.org/sdgs/files/report/2024/secretary-general-sdg-report-2024--EN.pdf
+https://data.worldbank.org/indicator/SL.TLF.TOTL.IN

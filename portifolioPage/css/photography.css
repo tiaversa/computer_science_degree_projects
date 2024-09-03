@@ -1,6 +1,96 @@
 header {
-    height: 100vh;
-    background-color: aliceblue;
+    height: 40vw;
+    justify-content: center;
+    text-align: center;
+}
+
+#img1 {
+    position: absolute;
+    top: 1vh;
+    left: 75vw;
+    width: 40vw;
+    z-index: 4;
+}
+
+#img2 {
+    position: absolute;
+    top: 5vh;
+    width: 25vw;
+    z-index: 4;
+}
+
+#img3 {
+    position: absolute;
+    top: -2vh;
+    left: 68vw;
+    width: 28vw;
+}
+
+#img4 {
+    position: absolute;
+    top: -2vh;
+    left: 10vw;
+    width: 20vw;
+    z-index: 1;
+}
+
+#img5 {
+    position: absolute;
+    top: 24vw;
+    left: 16vw;
+    width: 20vw;
+    z-index: 2;
+}
+
+#img6 {
+    position: absolute;
+    top: 2vw;
+    left: 24vw;
+    width: 13vw;
+}
+
+#img7 {
+    position: absolute;
+    top: 23vw;
+    left: 58vw;
+    width: 20vw;
+}
+
+.headerImg {
+    position:fixed;
+}
+
+#awesome {
+    display: none;
+    position: absolute;
+    z-index: 3;
+}
+
+#name {
+    width:max-content;
+    position: relative;
+    top: 40%; left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+
+#name h1 {
+    font-family: 'Freakshow3', cursive; /*'Permanent Marker', cursive; */
+    font-size: 4em;
+    transform: rotate(-4deg);
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+#name p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    background-color: #000;
+    color: #fff;
+    margin: 10px;
+    padding: 5px 15px;
+    display: inline-block;
+    transform: rotate(1deg);
 }
 
 #photoGrid {
@@ -74,4 +164,26 @@ header {
 
 .overlay.active {
     display: block;
+}
+
+/* Web */
+@media (min-width:768px) and (max-width:1010px){
+    #photoGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 15px;
+    }
+    #name {
+        width: 80vw;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #photoGrid {
+        grid-template-columns: 1fr 1fr;
+        margin: 10px;
+    }
+    #name {
+        width: 80vw;
+    }
 }
