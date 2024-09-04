@@ -4,11 +4,6 @@
 }
 
 @font-face {
-    font-family: 'Freakshow2';
-    src: url('../fonts/freakshow_2.ttf');
-}
-
-@font-face {
     font-family: 'Freakshow3';
     src: url('../fonts/freakshow_3.ttf');
 }
@@ -39,31 +34,11 @@
 }
 
 @font-face {
-    font-family: 'punk04';
-    src: url('../fonts/punk04.ttf');
-}
-
-@font-face {
     font-family: 'punk05';
     src: url('../fonts/punk05.ttf');
 }
 
 @font-face {
-    font-family: 'punk06';
-    src: url('../fonts/punk06.ttf');
-}
-
-@font-face {
     font-family: 'punk07';
     src: url('../fonts/punk07.ttf');
-}
-
-@font-face {
-    font-family: 'punk08';
-    src: url('../fonts/punk08.ttf');
-}
-
-@font-face {
-    font-family: 'punk09';
-    src: url('../fonts/punk09.ttf');
 }
