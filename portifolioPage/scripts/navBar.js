@@ -9,6 +9,7 @@ navHTML = `<div id="menu" class="menu-button">&#9776;</div>
     <li class="nav-item"><a href="../index.html#volunteer">VOLUNTEER</br>WORK</a></li>
     <li class="nav-item"><a href="photography.html">PHOTOGRAPHY</a></li>
     <li class="nav-item"><a href="../index.html#contact">CONTACT</a></li>
+    <li class="nav-item"><a href="report.html">REPORT</a></li>
 </ul>`
 var nav = document.getElementsByTagName("nav");
 console.log(nav);
