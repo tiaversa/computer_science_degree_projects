@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timna's Hobbies</title>
+    <!-- Google Fonts imports -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Courier+Prime&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <!-- Handlebars.js for templating -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <!-- Custom CSS files -->
     <link rel="stylesheet" href="../css/photography.css">
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body role="document">
+    <!-- Navigation menu (content loaded dynamically via JavaScript) -->
     <nav role="navigation" aria-label="Main Navigation"></nav>
+    
     <header role="banner">
+        <!-- Decorative images for the header -->
         <div class="headerImg" role="img" aria-label="Decorative images of various graphics">
             <img id="img1" src="../images/pngegg (9).png" alt="Drawing of camera">
             <img id="img2" src="../images/pngegg (33).png" alt="Statue of a women with a open hand">
@@ -26,13 +32,17 @@
             <img id="img6" src="../images/pngegg (26).png" alt="Old polaroid camera">
             <img id="img7" src="../images/pngegg (21).png" alt="Magazine cutout of the spice girls">
         </div>
+        <!-- Introduction section -->
         <div id="name" role="complementary" aria-label="Introduction">
             <h1>Photography</h1>
             <p>I'm a huge fan of street art and try to take this hobby quite seriously since it is something I really enjoy.</p>
         </div>
     </header>
+    
     <main role="main">
+        <!-- Photo grid container -->
         <div id="photoGrid" role="region" aria-label="Photo Grid">
+            <!-- Handlebars template for photo grid -->
             <script id="phototemplate" type="text/x-handlebars-template">
                 {{#each my_photos}}
                 <div id="{{grid_position}}" class="photo-item" style="background-image: url('{{src}}');" role="img" aria-label="Photo of {{image_name}}">
@@ -45,7 +55,11 @@
             </script>  
         </div>
     </main>
+    
+    <!-- Footer (content loaded dynamically via JavaScript) -->
     <footer role="contentinfo"></footer>
+    
+    <!-- JavaScript files -->
     <script src="../scripts/navBar.js"></script>
     <script src="../scripts/main.js"></script>
     <script src="../scripts/photography.js"></script>

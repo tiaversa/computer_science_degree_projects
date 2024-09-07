@@ -1,30 +1,35 @@
+/* Main container for the book list */
 #booksList {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    justify-content: space-evenly;
-    gap: 2px;
-    position: relative;
+    width: 100%; /* Full width of the container */
+    display: grid; /* Using CSS grid for layout */
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    grid-template-rows: auto; /* Rows will adjust automatically based on content */
+    justify-content: space-evenly; /* Even spacing between columns */
+    gap: 2px; /* Small gap between grid items */
+    position: relative; /* Allows for absolute positioning of child elements if needed */
 }
 
+/* Styling for each book description box */
 .bookDescription {
-    background-color: rgb(255, 255, 255, 0.4);
-    position:relative;
-    margin: 10px;
-    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.4); /* Semi-transparent white background */
+    position: relative; /* Positioned relative to its normal flow */
+    margin: 10px; /* Space around each book description */
+    padding: 10px; /* Inner padding to create space between the content and border */
 }
 
+/* Title (h1) styling within the book description */
 .bookDescription h1 {
-    text-align: center;
-    font-family: 'punk03', 'Permanent Marker', cursive;
+    text-align: center; /* Center-align the book title */
+    font-family: 'punk03', 'Permanent Marker', cursive; /* Custom and fallback fonts */
 }
 
+/* Unordered list inside the book description */
 .bookDescription ul {
-    list-style: none;
+    list-style: none; /* Remove bullet points from the list */
 }
 
-.bookDescription img{
-    padding: 10px;
-    width: 100%;
+/* Styling for book images */
+.bookDescription img {
+    padding: 10px; /* Padding around the image */
+    width: 100%; /* Image will take up the full width of its container */
 }

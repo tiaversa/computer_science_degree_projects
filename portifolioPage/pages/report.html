@@ -1,140 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Defines the language of the website for screen readers -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timna's Report</title>
-    <link rel="stylesheet" href="../css/fonts.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <meta charset="UTF-8"> <!-- Character encoding for the website -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling on mobile devices -->
+    <title>Timna's Website Report</title>
+    <link rel="stylesheet" href="../css/fonts.css"> <!-- External font styles -->
+    <link rel="stylesheet" href="../css/styles.css"> <!-- External CSS styles -->
     <style>
         body {
-            margin: 2vw;
+            margin: 2vw; /* Adds margin around the body for spacing */
         }
         div {
-            margin: 1vw;
+            margin: 1vw; /* Adds margin to all divs for better spacing */
         }
     </style>
 </head>
 <body>
-    <div id="name"><h1>Timna Aversa</h1></div>
-    <section id="introduction">
-        <h2>Introduction</h2>
-        <p>What is the essential story being told by your portfolio site? Describe the version of 
-            you that it is about. What is the audience you are addressing? What type of structure did you 
-            choose to implement?</p>
+    <!-- Main heading for screen readers to understand the page's purpose -->
+    <div id="name"><h1>Timna Aversa Personal Portfolio Website Report</h1></div>
+
+    <!-- Introduction section with semantic HTML to provide structure -->
+    <section id="introduction" aria-labelledby="introduction-heading">
+        <h2 id="introduction-heading">Introduction</h2>
+        <h3>The Website to Get To Know Me</h3>
         <p>The essential narrative of my portfolio site is to offer a comprehensive view of my professional journey and personal interests. It aims to present a multifaceted version of myself, encompassing my career in data engineering, my contributions to educational content for children, and my passion for photography. The primary audience for this site includes potential employers, collaborators, and individuals interested in my work and hobbies.</p>
         <p>Regarding the structure, I opted for a versatile layout that integrates various elements to reflect different aspects of my professional and personal life. The site features distinct sections dedicated to my projects, writings, and hobbies, each with its own visual and functional characteristics. This approach allows for a clear and organized presentation of my work while ensuring an engaging user experience.</p>
     </section>
-    <section id="inspiration">
-        <h2>Inspiration</h2>
-        <p>State 3 professional portfolio sites (not advice articles or portfolio templates) that 
-            have inspired you when creating your website. What did you learn from them?</p>
+
+    <!-- Clearly labeling each section improves accessibility for screen readers -->
+    <section id="inspiration" aria-labelledby="inspiration-heading">
+        <h2 id="inspiration-heading">Inspiration</h2>
+        <p>State 3 professional portfolio sites (not advice articles or portfolio templates) that have inspired you when creating your website. What did you learn from them?</p>
         <p>My design and functionality choices were influenced by several notable portfolio sites, each contributing unique elements to my project:</p>
-        <p>1. <a href="https://www.joshloveslight.com/" target="_blank">Josh Loves Light</a>: This site prominently features a gallery of photographs with a clean and engaging layout. I was inspired by the way images are showcased upfront, which significantly influenced my decision to highlight my photography work in a similar manner. Implementing a hover effect that enlarges images while dimming the rest of the page was particularly impactful.</p>
-        <p>2. <a href="https://www.book-by-its-cover.com/" target="_blank">Book by Its Cover</a>: This site presents books in a well-organized grid layout. I appreciated the clarity and visual appeal of this arrangement, leading me to adopt a similar approach for displaying various sections of my portfolio, including educational materials.</p>
-        <p>3. <a href="https://www.nathalie-lete.com/" target="_blank">Nathalie Lété</a>: Known for its minimalist design, this site inspired me to experiment with a notebook-style presentation for my zine portfolio. The use of random CSS values in conjunction with JavaScript for dynamic visual effects was an innovative technique that I incorporated into my project.</p>
-        <p>Bonus: <a href="https://www.behance.net/gallery/114963391/Netflixs-Moxie-Zines" target="_blank">Netflix’s Moxie Zines on Behance</a>: The site's fanzine aesthetic, featuring a handmade and punk-inspired design, was a major influence. I aimed to evoke a similar feel in my portfolio to give it a unique, personal touch.</p>
-    </section>
-    <section id="accessibility">
-        <h2>Accessibility</h2>
-        <p>State 3 ways in which your site is accessible.</p>
         <ul>
-            <li>Alternative Text: Descriptive alt text has been added to all images to ensure that they are accessible to users utilizing screen readers.</li>
-            <li>Color Contrast: The website adheres to high color contrast ratios, enhancing readability for users with visual impairments.</li>
-            <li>Keyboard Navigation: The site supports full keyboard navigation, allowing users who cannot use a mouse to interact with all interactive elements.</li>
+            <li><a href="https://www.joshloveslight.com/" aria-label="Visit Josh Loves Light's website">Josh Loves Light</a>: Inspired my photography section's gallery with a clean layout and engaging hover effects.</li>
+            <li><a href="https://www.book-by-its-cover.com/" aria-label="Visit Book by Its Cover website">Book by Its Cover</a>: The grid layout inspired the structure of my educational materials section.</li>
+            <li><a href="https://www.nathalie-lete.com/" aria-label="Visit Nathalie Lété's website">Nathalie Lété</a>: Minimalist design elements and dynamic CSS effects influenced my zine portfolio layout.</li>
+            <li>Bonus: <a href="https://www.behance.net/gallery/114963391/Netflixs-Moxie-Zines" aria-label="Visit Netflix's Moxie Zines on Behance">Netflix's Moxie Zines on Behance</a>: Inspired a handmade fanzine aesthetic for my portfolio design.</li>
         </ul>
     </section>
-    <section id="usability">
-        <h2>Usability</h2>
-        <p>State 3 ways in which you considered the usability of your site.</p>
+
+    <!-- Accessibility section using list elements to highlight key accessibility features -->
+    <section id="accessibility" aria-labelledby="accessibility-heading">
+        <h2 id="accessibility-heading">Accessibility</h2>
         <ul>
-            <li>Consistent Navigation: Consistent navigation elements across all pages ensure a seamless user experience and help visitors easily find the content they are looking for.</li>
-            <li>Responsive Design: The site is designed to be fully responsive, providing an optimal viewing experience across a variety of devices, including desktops, tablets, and smartphones.</li>
-            <li>ARIA Landmarks: ARIA roles have been implemented to assist screen readers in navigating the content effectively, making the site more accessible to users with disabilities.</li>
+            <li><strong>Alternative Text:</strong> Alt text provided for all images to support screen reader users.</li>
+            <li><strong>Color Contrast:</strong> High contrast colors ensure better visibility for users with visual impairments.</li>
+            <li><strong>Keyboard Navigation:</strong> Full keyboard navigation for users unable to use a mouse.</li>
         </ul>
     </section>
-    <section id="learning">
-        <h2>Learning</h2>
-        <p>State 3 things you had to learn or find out to create your site. How did you achieve that?</p>
+
+    <!-- Usability section with important usability considerations -->
+    <section id="usability" aria-labelledby="usability-heading">
+        <h2 id="usability-heading">Usability</h2>
         <ul>
-            <li>JSON Integration: I learned how to fetch and integrate JSON data into my project by studying online tutorials and documentation. This allowed me to dynamically load and display content.</li>
-            <li>Handlebars.js: I utilized Handlebars.js to create dynamic templates for presenting content. I followed tutorials and example projects to understand its implementation and effectively use it in my site. Despite initial challenges, once I overcame these obstacles, Handlebars.js proved to be a practical and powerful tool throughout the project.</li>
-            <li>CSS Z-Index: I explored the use of CSS z-index to manage layer stacking and control the visibility of elements. This involved experimenting with different values and reading documentation to achieve the desired visual effects.</li>
+            <li><strong>Consistent Navigation:</strong> Ensures a smooth experience by keeping navigation elements consistent across pages.</li>
+            <li><strong>Responsive Design:</strong> Optimized for various devices, ensuring it looks good on desktop, tablets, and smartphones.</li>
+            <li><strong>ARIA Landmarks:</strong> Use of ARIA roles for screen readers to understand and navigate the page structure easily.</li>
         </ul>
     </section>
-    <section id="evaluation">
-        <h2>Evaluation</h2>
+
+    <!-- Learning section explains what was learned during the website creation process -->
+    <section id="learning" aria-labelledby="learning-heading">
+        <h2 id="learning-heading">Learning</h2>
+        <ul>
+            <li><strong>JSON Integration:</strong> Learned how to integrate dynamic content using JSON for displaying data.</li>
+            <li><strong>Handlebars.js:</strong> Used Handlebars.js to create dynamic templates, overcoming initial challenges to streamline content rendering.</li>
+            <li><strong>CSS Z-Index:</strong> Mastered CSS z-index properties to control element stacking order, improving visual layering and layout control.</li>
+        </ul>
+    </section>
+
+    <!-- Evaluation of the project, listing successes and areas for improvement -->
+    <section id="evaluation" aria-labelledby="evaluation-heading">
+        <h2 id="evaluation-heading">Evaluation</h2>
         <h3>1. What aspects of your work do you think were particularly successful? Why?</h3>
-        <p>The use of Handlebars.js and CSS Grid for the photography section was highly effective, providing a dynamic and visually appealing gallery. The implementation of JavaScript for reusable footer and navigation code also contributed to a more maintainable and efficient project. Additionally, the overall design and content integration successfully conveyed my professional and personal interests.</p>
+        <p>The use of Handlebars.js and CSS Grid was successful in creating a dynamic, visually engaging gallery. The reusable footer and navigation components improved code efficiency and maintainability.</p>
+
         <h3>2. What aspects of your work could be improved? How might you do things differently another time?</h3>
-        <p>Some challenges were encountered with the styling of dynamically generated content via JavaScript, which did not always function as intended. In future projects, I would focus on more thorough testing of dynamic styles and interactions. Additionally, I would enhance the personalization of the index page and explore incorporating varied image sizes in the photography gallery to improve visual interest and user engagement. Furthermore, I am interested in incorporating 3D elements into the website, as this trend is gaining traction and could enhance the visual appeal and interactivity of the site.</p>
+        <p>Improving the styling of dynamically generated content and incorporating varied image sizes in the photography gallery could enhance user engagement. I also plan to explore 3D elements in future projects to enrich interactivity and visual appeal.</p>
     </section>
-    <section id="resources">
-        <h2>Resources</h2>
-        <p>What resources did you use in your work? List any sources of information, libraries, 
-            plugins, code or tools (you should also indicate inclusions from other sources within your code 
-            using comments)</p>
+
+    <!-- Resources section to properly credit external sources used -->
+    <section id="resources" aria-labelledby="resources-heading">
+        <h2 id="resources-heading">Resources</h2>
         <h3>Images:</h3>
         <ul>
-            <li><a href="https://www.goodfreephotos.com/vector-images/girl-power-vector-clipart.png.php" target="_blank">Good Free Photos</a></li>
-            <li><a href="https://www.pngegg.com/en/png-drrtj/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bllju#google_vignette`s`" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bypxz/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bdckz/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bwrer/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bzppz/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bvsyx/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-ehxeo/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bbqyn/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bmois/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bbixa/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bxjnm/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bqcmz/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bumkr/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-neowe/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-eiaxu/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-blbmg/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-ndrjy/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-mfkak/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-nxptc/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-plhjt/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-zywqo/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-tfhme/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bkmnc/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-fgylt/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-pndnp/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-cdgan/download#google_vignette" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-wlyjb/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-wlygd/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-yjldx/download" target="_blank">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bzdmb/download" target="_blank">Free Image PNG Website</a></li>
+            <li><a href="https://www.goodfreephotos.com/vector-images/girl-power-vector-clipart.png.php">Good Free Photos</a></li>
+            <li><a href="https://www.pngegg.com/en/png-drrtj/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bllju#google_vignettes">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bypxz/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bdckz/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bwrer/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bzppz/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bvsyx/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-ehxeo/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bbqyn/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bmois/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bbixa/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bxjnm/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bqcmz/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bumkr/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-neowe/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-eiaxu/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-blbmg/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-ndrjy/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-mfkak/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-nxptc/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-plhjt/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-zywqo/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-tfhme/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bkmnc/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-fgylt/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-pndnp/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-cdgan/download#google_vignette">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-wlyjb/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-wlygd/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-yjldx/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bzdmb/download">Free Image PNG Website</a></li>
 
         </ul>
         <h3>Fonts:</h3>
         <ul>
-            <li><a href="https://www.1001fonts.com/ransom-note-fonts.html?page=2" target="_blank">1001 Fonts</a></li>
+            <li><a href="https://www.1001fonts.com/ransom-note-fonts.html?page=2">1001 Fonts</a></li>
         </ul>
         <h3>Handlebars.js:</h3>
         <ul>
-            <li><a href="https://www.youtube.com/watch?v=WZCX-RmJN1s&list=PLLgJJsrdwhPxqkP5AgzZX9jKoKoBtRcu0&index=1" target="_blank">YouTube Tutorial on Handlebars.js</a></li>
+            <li><a href="https://www.youtube.com/watch?v=WZCX-RmJN1s&list=PLLgJJsrdwhPxqkP5AgzZX9jKoKoBtRcu0&index=1">YouTube Tutorial on Handlebars.js</a></li>
         </ul>
         <h3>Icons:</h3>
         <ul>
-            <li><a target="_blank" href="https://icons8.com/icon/QOACCnLJXMkg/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></ul></li>
-            <li><a target="_blank" href="https://icons8.com/icon/9LB6bUNyP4yj/medium">Medium</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></ul></li>
-            <li><a target="_blank" href="https://icons8.com/icon/WstlpRjF3VCm/tumblr">Tumblr</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></ul></li>
-            <li><a target="_blank" href="https://icons8.com/icon/uZIMz8rZqfcW/youtube">YouTube</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></ul></li>
-            <li><a target="_blank" href="https://icons8.com/icon/QU5mfsH8tIqo/facebook">Facebook</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></ul></li>
-            <li><a target="_blank" href="https://icons8.com/icon/yc2dJ0jTSu8L/instagram">Instagram</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></ul></li>
-            <li><a target="_blank" href="https://icons8.com/icon/Uee1q1O0scBI/follow">Follow</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p></ul></li>
+            <li><a href="https://icons8.com/icon/QOACCnLJXMkg/github">GitHub</a> icon by <a href="https://icons8.com">Icons8</a></ul></li>
+            <li><a href="https://icons8.com/icon/9LB6bUNyP4yj/medium">Medium</a> icon by <a href="https://icons8.com">Icons8</a></ul></li>
+            <li><a href="https://icons8.com/icon/WstlpRjF3VCm/tumblr">Tumblr</a> icon by <a href="https://icons8.com">Icons8</a></ul></li>
+            <li><a href="https://icons8.com/icon/uZIMz8rZqfcW/youtube">YouTube</a> icon by <a href="https://icons8.com">Icons8</a></ul></li>
+            <li><a href="https://icons8.com/icon/QU5mfsH8tIqo/facebook">Facebook</a> icon by <a href="https://icons8.com">Icons8</a></ul></li>
+            <li><a href="https://icons8.com/icon/yc2dJ0jTSu8L/instagram">Instagram</a> icon by <a href="https://icons8.com">Icons8</a></ul></li>
+            <li><a href="https://icons8.com/icon/Uee1q1O0scBI/follow">Follow</a> icon by <a href="https://icons8.com">Icons8</a></p></ul></li>
         </ul>
         <h3>Data Resources:</h3>
-        <li><a href="https://unstats.un.org/sdgs/files/report/2024/secretary-general-sdg-report-2024--EN.pdf" target="_blank">UN data</a></li>
-        <li><a href="https://data.worldbank.org/indicator/SL.TLF.TOTL.IN" target="_blank">World Bank Data</a></li>
+        <ul>
+            <li><a href="https://unstats.un.org/sdgs/files/report/2024/secretary-general-sdg-report-2024--EN.pdf">UN data</a></li>
+            <li><a href="https://data.worldbank.org/indicator/SL.TLF.TOTL.IN">World Bank Data</a></li>
+        </ul>
     </section>
-    <section id="appendices">
-        <h2>Appendices</h2>
-        <p>Site map, wireframes, and mock-ups are included here as applicable to provide a visual understanding of the site's structure and design.</p>
+
+    <!-- Appendices section for visual aids like wireframes or mockups -->
+    <section id="appendices" aria-labelledby="appendices-heading">
+        <h2 id="appendices-heading">Appendices</h2>
+        <p>Site map, wireframes, and mock-ups provide a visual understanding of the site's structure and design.</p>
     </section>
 </body>
 </html>

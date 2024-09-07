@@ -1,123 +1,142 @@
+/* Styling for the header container */
 header {
-    height: 40vw;
-    justify-content: center;
-    text-align: center;
+    height: 40vw; /* Sets the height of the header to 40% of the viewport width */
+    justify-content: center; /* Centers content horizontally */
+    text-align: center; /* Centers text inside the header */
 }
 
+/* Image 1 styling */
 #img1 {
-    position: absolute;
-    top: -1vh;
-    left: 15vw;
-    width: 18vw;
+    position: absolute; /* Positioned absolutely relative to its closest positioned ancestor */
+    top: -1vh; /* Positioned slightly above the top of the viewport */
+    left: 15vw; /* Positioned 15% from the left of the viewport */
+    width: 18vw; /* Image width is 18% of the viewport width */
 }
 
+/* Image 2 styling */
 #img2 {
-    position: absolute;
-    top: 18vh;
-    left: 68vw;
-    width: 39vw;
+    position: absolute; /* Absolute positioning */
+    top: 18vh; /* Positioned 18% of the viewport height from the top */
+    left: 68vw; /* Positioned 68% from the left of the viewport */
+    width: 39vw; /* Image width is 39% of the viewport width */
 }
 
+/* Image 3 styling */
 #img3 {
-    position: absolute;
-    top: 37vh;
-    left: 15vw;
-    width: 21vw;
+    position: absolute; /* Absolute positioning */
+    top: 37vh; /* Positioned 37% of the viewport height from the top */
+    left: 15vw; /* Positioned 15% from the left of the viewport */
+    width: 21vw; /* Image width is 21% of the viewport width */
 }
 
+/* Image 4 styling */
 #img4 {
-    position: absolute;
-    top: -1vh;
-    left: 70vw;
-    width: 20vw;
+    position: absolute; /* Absolute positioning */
+    top: -1vh; /* Positioned slightly above the viewport */
+    left: 70vw; /* Positioned 70% from the left of the viewport */
+    width: 20vw; /* Image width is 20% of the viewport width */
 }
 
+/* Image 5 styling */
 #img5 {
-    position: absolute;
-    top: -3vw;
-    left: 0vw;
-    width: 20vw;
+    position: absolute; /* Absolute positioning */
+    top: -3vw; /* Positioned slightly above the viewport (using vw as a measure) */
+    left: 0vw; /* Positioned at the very left of the viewport */
+    width: 20vw; /* Image width is 20% of the viewport width */
 }
 
+/* Image 6 styling */
 #img6 {
-    position: absolute;
-    top: 23vw;
-    left: 37vw;
-    width: 29vw;
-    z-index: 7;
+    position: absolute; /* Absolute positioning */
+    top: 23vw; /* Positioned 23% of the viewport width from the top */
+    left: 37vw; /* Positioned 37% from the left of the viewport */
+    width: 29vw; /* Image width is 29% of the viewport width */
+    z-index: 7; /* Stacks above other elements with a lower z-index */
 }
 
+/* Image 7 styling */
 #img7 {
-    position: absolute;
-    top: 10vw;
-    left: 62vw;
-    width: 25vw;
+    position: absolute; /* Absolute positioning */
+    top: 10vw; /* Positioned 10% of the viewport width from the top */
+    left: 62vw; /* Positioned 62% from the left of the viewport */
+    width: 25vw; /* Image width is 25% of the viewport width */
 }
 
+/* Styling for the header images */
 .headerImg {
-    position:relative;
+    position: relative; /* Positioned relative to its normal flow */
 }
 
+/* Hidden element with absolute positioning */
 #awesome {
-    display: none;
-    position: absolute;
-    z-index: 3;
+    display: none; /* Initially hidden */
+    position: absolute; /* Positioned absolutely relative to the closest ancestor */
+    z-index: 3; /* Stacks above certain elements */
 }
 
+/* Container for the name, positioned in the center */
 #name {
-    width:max-content;
-    position: relative;
-    top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 2;
+    width: max-content; /* Width adjusts based on the content inside */
+    position: relative; /* Positioned relative to its normal position */
+    top: 50%; /* Positioned in the middle of the viewport */
+    left: 50%; /* Positioned horizontally at the center of the viewport */
+    transform: translate(-50%, -50%); /* Centers the element both horizontally and vertically */
+    z-index: 2; /* Positioned above some other elements */
 }
 
+/* Styling for the heading inside the name container */
 #name h1 {
-    font-family: 'Freakshow3', cursive; /*'Permanent Marker', cursive; */
-    font-size: 6em;
-    transform: rotate(-3deg);
-    background-color: rgb(255, 255, 255, 0.5);
+    font-family: 'Freakshow3', cursive; /* Sets a unique, cursive font */
+    font-size: 6em; /* Large font size for the name */
+    transform: rotate(-3deg); /* Slightly rotates the text */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
 }
 
+/* Styling for the paragraph inside the name container */
 #name p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 1em;
-    background-color: #000;
-    color: #fff;
-    margin: 5px;
-    padding: 5px 15px;
-    display: inline-block;
-    transform: rotate(0.5deg);
+    font-family: 'Roboto', sans-serif; /* Uses a sans-serif font */
+    font-weight: 700; /* Bold text */
+    font-size: 1em; /* Default font size */
+    background-color: #000; /* Black background for contrast */
+    color: #fff; /* White text color */
+    margin: 5px; /* Small space around the paragraph */
+    padding: 5px 15px; /* Padding inside the paragraph */
+    display: inline-block; /* Makes the paragraph behave like an inline element */
+    transform: rotate(0.5deg); /* Slight rotation for a playful effect */
 }
 
+/* Grid container for displaying projects */
 .project_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    justify-content: space-evenly;
-    gap: 1vw;
-    position: relative;
-    margin: 3vw;
-    z-index: 3;
+    display: grid; /* Uses a CSS grid layout */
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    grid-template-rows: auto; /* Rows adjust automatically based on content */
+    justify-content: space-evenly; /* Spaces the grid items evenly */
+    gap: 1vw; /* 1% of viewport width gap between grid items */
+    position: relative; /* Positioned relative to its normal flow */
+    margin: 3vw; /* Space around the grid */
+    z-index: 3; /* Positioned above other elements with lower z-index */
 }
 
+/* Styling for individual project items */
 .project {
-    background-color: rgb(255, 255, 255, 0.3);
-    justify-content: center;
-    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+    justify-content: center; /* Centers content horizontally */
+    border-radius: 20px; /* Rounded corners for the project container */
 }
 
-.project img{
-    width: 45vw;
-    margin: 1vw 0 1vw 1vw;
+/* Styling for images inside the project container */
+.project img {
+    width: 45vw; /* Image width is 45% of the viewport width */
+    margin: 1vw 0 1vw 1vw; /* Adds margin around the image */
 }
 
+/* Styling for the project title */
 .project h1 {
-    padding: 1vw;
-    font-size: 3vw;
+    padding: 1vw; /* Adds padding around the title */
+    font-size: 3vw; /* Font size based on the viewport width */
 }
 
+/* Styling for the project description */
 .project p {
-    padding: 0 15px 15px 15px;
+    padding: 0 15px 15px 15px; /* Adds padding around the text */
 }

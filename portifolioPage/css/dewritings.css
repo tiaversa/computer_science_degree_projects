@@ -1,173 +1,199 @@
+/* Header section styling */
 header {
-    z-index: 2;
+    z-index: 2; /* Ensures the header appears above lower elements */
 }
 
-header img{
-    z-index: 3;
+/* Header image styling */
+header img {
+    z-index: 3; /* Positions the image above the header background */
 }
 
+/* Main heading (h1) in the header */
 header h1 {
-    font-family: 'punk02','Courier New', Courier, monospace;
-    position: absolute;
-    top: 50vw;
-    left: 80vh;
-    font-size: 6vw;
-    z-index: 4;
+    font-family: 'punk02', 'Courier New', Courier, monospace; /* Custom font */
+    position: absolute; /* Absolute positioning within the header */
+    top: 50vw; /* Positions the h1 50 viewport widths from the top */
+    left: 80vh; /* Positions the h1 80 viewport heights from the left */
+    font-size: 6vw; /* Responsive font size based on viewport width */
+    z-index: 4; /* Ensures the h1 appears above the image and background */
 }
 
+/* Side menu (positioned fixed on the right side) */
 .side-menu {
-    position: fixed;
-    top: 5vh;
-    right: 5vw;
-    width: 30ew;
-    background-color: rgba(255,255,255,0.2);
-    border-radius: 20px;
-    justify-content: center;
-    z-index: 1;
+    position: fixed; /* Fixed to the viewport */
+    top: 5vh; /* 5% from the top */
+    right: 5vw; /* 5% from the right */
+    width: 30vw; /* Side menu width */
+    background-color: rgba(255,255,255,0.2); /* Semi-transparent white background */
+    border-radius: 20px; /* Rounded corners */
+    justify-content: center; /* Centers the content inside the side menu */
+    z-index: 1; /* Positioned behind the header elements */
 }
 
+/* Heading (h1) inside the side menu */
 .side-menu h1 {
-    font-family: 'punk03','Courier New', Courier, monospace;
-    font-size: 5vw;
-    margin: 4vw;
+    font-family: 'punk03', 'Courier New', Courier, monospace; /* Custom font for the side menu heading */
+    font-size: 5vw; /* Responsive font size */
+    margin: 4vw; /* Margin around the heading */
 }
 
+/* Links inside article blocks */
 .article a {
-    display: block;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-    font-size: 3vw;
-    font-family: 'punk05','Courier New', Courier, monospace;
+    display: block; /* Block display for full clickable area */
+    height: 100%; /* Full height clickable */
+    width: 100%; /* Full width clickable */
+    text-decoration: none; /* Remove underline */
+    font-size: 3vw; /* Responsive font size */
+    font-family: 'punk05', 'Courier New', Courier, monospace; /* Custom font for article links */
 }
 
+/* Styling for individual article sections */
 .article {
-    margin: 1vw;
-    padding: 2vw;
+    margin: 1vw; /* Space around the article */
+    padding: 2vw; /* Padding inside the article */
 }
 
+/* Hover effect for articles */
 .article:hover {
-    background-color: rgb(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2); /* Slight darkening effect on hover */
 }
 
+/* Collage section styling */
 .collage-section {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 5px 5px 0 rgba(0,0,0,0.1);
-    min-height: 100vh;
-    margin: 5vw;
+    background-color: #fff; /* White background */
+    padding: 20px; /* Padding inside the section */
+    box-shadow: 5px 5px 0 rgba(0,0,0,0.1); /* Slight shadow effect */
+    min-height: 100vh; /* Takes up the full viewport height */
+    margin: 5vw; /* Margin around the collage section */
 }
 
+/* Decorative stars before and after the collage section */
 .collage-section::before,
 .collage-section::after {
-    content: "★";
-    font-size: 2em;
-    position: absolute;
-    color: #FFD700;
+    content: "★"; /* Adds a star symbol */
+    font-size: 2em; /* Large star size */
+    position: absolute; /* Positioned relative to the section */
+    color: #FFD700; /* Gold color for the stars */
 }
 
 .collage-section::before {
-    top: -7px;
+    top: -7px; /* Positions the star at the top-left */
     left: -1px;
 }
 
 .collage-section::after {
-    bottom: 10px;
+    bottom: 10px; /* Positions the star at the bottom-right */
     right: 10px;
 }
 
+/* General body and text styling (global reset) */
 body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and borders in element width/height */
 }
 
+/* Additional header styling */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px; /* Padding inside the header */
+    text-align: center; /* Center-align content */
 }
 
+/* Styling for images inside the header */
 header img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+    max-width: 100%; /* Image takes up full width but maintains aspect ratio */
+    height: auto; /* Height adjusts automatically based on width */
+    border-radius: 8px; /* Rounded corners on the image */
 }
 
+/* General h1 styling */
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 2.5em; /* Large heading size */
+    margin-bottom: 10px; /* Space below the heading */
 }
 
+/* General h2 styling */
 h2 {
-    font-size: 2em;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    font-size: 2em; /* Slightly smaller than h1 */
+    margin-top: 20px; /* Space above the heading */
+    margin-bottom: 10px; /* Space below the heading */
 }
 
+/* Section block styling */
 section {
-    max-width: 800px;
-    margin: 20px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 800px; /* Maximum width of the section */
+    margin: 20px auto; /* Center the section and add space around it */
+    background: #fff; /* White background */
+    padding: 20px; /* Padding inside the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow effect */
 }
 
+/* Paragraph styling */
 p {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Space below paragraphs */
 }
 
+/* Bold text styling */
 strong {
-    font-weight: bold;
+    font-weight: bold; /* Bold font weight */
 }
 
+/* List styling */
 ul {
-    list-style: disc;
-    margin-left: 20px;
+    list-style: disc; /* Use bullet points */
+    margin-left: 20px; /* Indent list */
 }
 
+/* List item styling */
 li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Space below each list item */
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for screens smaller than 768px */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2em;
+        font-size: 2em; /* Smaller heading size */
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 1.5em; /* Smaller subheading size */
     }
 
     section {
-        margin: 10px;
-        padding: 15px;
+        margin: 10px; /* Less margin on smaller screens */
+        padding: 15px; /* Less padding */
     }
+
+    /* Hide side menu on smaller screens */
     .side-menu {
         display: none;
     }
 }
 
+/* Additional responsive adjustments for screens smaller than 480px */
 @media (max-width: 480px) {
     header img {
-        width: 100%;
-        height: auto;
+        width: 100%; /* Image takes full width */
+        height: auto; /* Maintain aspect ratio */
     }
 
     h1 {
-        font-size: 1.5em;
+        font-size: 1.5em; /* Smaller heading size */
     }
 
     h2 {
-        font-size: 1.2em;
+        font-size: 1.2em; /* Smaller subheading size */
     }
 
+    /* Smaller font sizes for text content */
     p, ul, li {
         font-size: 0.9em;
     }
+
+    /* Hide side menu on smaller screens */
     .side-menu {
         display: none;
     }

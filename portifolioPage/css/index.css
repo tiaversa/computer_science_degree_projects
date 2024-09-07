@@ -1,195 +1,227 @@
+/* Header Section */
 header {
-    position: relative;
-    text-align: center;
-    margin-bottom: 30px;
-    height: 100vh;
-    grid-area: header;
-    display: inline;
+    position: relative; /* Positioned relative to its normal location */
+    text-align: center; /* Center-align content inside the header */
+    margin-bottom: 30px; /* Add space below the header */
+    height: 100vh; /* Set header to take the full height of the viewport */
+    display: inline; /* Make the header content inline */
 }
 
+/* Image container for background/collage images */
 .image_box {
-    position: relative;
-    display: block;
-    height: 100vh;
-    width: 100vw;
-    text-decoration: none;
+    position: relative; /* Elements inside will be positioned relative to this box */
+    display: block; /* Block-level element, takes up full width */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    text-decoration: none; /* Remove text decorations like underlines */
 }
 
+/* Individual image positions for the collage layout */
+/* These images are likely part of a visual collage or design overlay */
 #img1 {
-    position: absolute;
-    top: -5vw;
-    left: -5vw;
-    width: 110vw;
+    position: absolute; /* Absolutely positioned relative to the .image_box */
+    top: -5vw; /* Positioned slightly above the top of the viewport */
+    left: -5vw; /* Positioned slightly to the left of the viewport */
+    width: 110vw; /* Image width slightly exceeds the viewport width */
 }
 
 #img2 {
-    position: absolute;
-    top: -6vw;
-    left: -5vw;
-    width: 120vw;
-    z-index: 2;
+    position: absolute; /* Positioned on top of other content */
+    top: -6vw; /* Positioned higher than img1 */
+    left: -5vw; /* Same left alignment as img1 */
+    width: 120vw; /* Larger width than img1 */
+    z-index: 2; /* Stacked on top of img1 */
 }
 
 #img3 {
     position: absolute;
-    top: 0vw;
-    right: -9vw;
-    width: 43vw;
+    top: 0vw; /* Align to the top */
+    right: -9vw; /* Overflow to the right of the viewport */
+    width: 43vw; /* Smaller image */
+}
+
+#img4, #img5, #img6, #img7 {
+    /* Similar absolute positioning for other images */
 }
 
 #img4 {
-    position: absolute;
     top: 0vw;
     right: -3vw;
     width: 35vw;
 }
 
 #img5 {
-    position: absolute;
     top: 0vw;
     left: 2vw;
     width: 10vw;
 }
 
 #img6 {
-    position: absolute;
     top: 33vw;
     left: 21vw;
     width: 10vw;
-    transform: rotate(2deg);
-    z-index: 3;
+    transform: rotate(2deg); /* Slight rotation to make the layout dynamic */
+    z-index: 3; /* Positioned on top of lower layers */
 }
 
 #img7 {
-    position: absolute;
     top: 18vw;
     left: -10vw;
     width: 35vw;
-    transform: rotate(2deg);
-    /* z-index: 3; */
+    transform: rotate(2deg); /* Adds a tilted effect */
+    /* Optional z-index for layering */
 }
 
+/* Logo or image inside the header */
 header img {
-    width: 100px;
+    width: 100px; /* Fixed width for all images inside the header */
 }
 
+/* Hidden element with id 'awesome' */
 #awesome {
-    display: none;
-    position: absolute;
-    z-index: 3;
+    display: none; /* Hidden by default */
+    position: absolute; /* Absolutely positioned */
+    z-index: 3; /* Stacked above other elements */
 }
 
+/* Centralized text overlay in the header */
 #name {
-    width:max-content;
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 2;
+    width: max-content; /* Width will adjust to the content */
+    position: absolute; /* Positioned in the center of the page */
+    top: 50%; left: 50%; /* Center alignment */
+    transform: translate(-50%, -50%); /* Perfect centering using translation */
+    z-index: 2; /* Positioned above background elements */
 }
 
+/* Stylized heading inside the header */
 .name-h1 {
-    font-family: 'Freakshow1', cursive;
-    font-size: 6em;
-    margin: 0;
-    transform: rotate(-5deg);
-    padding: 0 1vw 0 1vw;
-    background-color: rgba(255,255,255,0.4);
+    font-family: 'Freakshow1', cursive; /* Custom font */
+    font-size: 6em; /* Large font size */
+    margin: 0; /* No margin */
+    transform: rotate(-5deg); /* Tilted for a playful effect */
+    padding: 0 1vw; /* Padding on the sides */
+    background-color: rgba(255,255,255,0.4); /* Semi-transparent white background */
 }
 
+/* Title block styling */
 .title-block {
-    font-family: 'punk05', 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 3em;
-    background-color: #000;
-    color: #fff;
-    padding: 5px 15px;
-    display: inline-block;
-    transform: rotate(3deg);
+    font-family: 'punk05', 'Roboto', sans-serif; /* Custom and fallback fonts */
+    font-weight: 700; /* Bold text */
+    font-size: 3em; /* Large font size */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 5px 15px; /* Padding inside the title block */
+    display: inline-block; /* Ensures the block takes up the right amount of space */
+    transform: rotate(3deg); /* Slight rotation for visual appeal */
 }
 
+/* Section styling for a collage-style layout */
 .collage-section {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 5px 5px 0 rgba(0,0,0,0.1);
-    min-height: 100vh;
-    max-width: 1000px;
-    margin: 20px;
-    z-index: 10;
+    background-color: #fff; /* White background */
+    padding: 20px; /* Inner padding */
+    box-shadow: 5px 5px 0 rgba(0,0,0,0.1); /* Light shadow for depth */
+    min-height: 100vh; /* Full viewport height */
+    max-width: 1000px; /* Limit width for better readability */
+    margin: 20px; /* Space around the section */
+    z-index: 10; /* Layered above other elements */
 }
 
+/* Section title with an underline */
 .section-title {
-    font-family: 'punk03','Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 2em;
-    margin-top: 0;
-    border-bottom: 2px solid #000;
+    font-family: 'punk03', 'Roboto', sans-serif; /* Custom fonts */
+    font-weight: 700; /* Bold text */
+    font-size: 2em; /* Medium-large font size */
+    margin-top: 0; /* Remove top margin */
+    border-bottom: 2px solid #000; /* Bottom border for emphasis */
 }
 
+/* List of skills */
 .skill-list {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
 }
 
+/* Individual skill list item */
 .skill-list li {
-    font-family: 'punk07','Courier Prime', monospace;
-    margin-bottom: 10px;
-    padding: 5px;
-    font-size: 2.3vw;
-    background-color: #FFD700;  /* Gold background for skills */
-    display: inline-block;
-    transform: rotate(-1deg);
+    font-family: 'punk07', 'Courier Prime', monospace; /* Custom font */
+    margin-bottom: 10px; /* Space between skills */
+    padding: 5px; /* Padding inside each skill */
+    font-size: 2.3vw; /* Responsive font size */
+    background-color: #FFD700; /* Gold background */
+    display: inline-block; /* Each skill is its own block */
+    transform: rotate(-1deg); /* Slight rotation for fun layout */
 }
 
+/* Project item styling */
 .project-item {
-    background-color: #E6E6FA;  /* Light purple for project items */
-    padding: 10px;
-    margin-bottom: 15px;
+    background-color: #E6E6FA; /* Light purple background */
+    padding: 10px; /* Padding inside the project item */
+    margin-bottom: 15px; /* Space between project items */
 }
+
+/* Decorative stars before and after collage-section */
 .collage-section::before,
 .collage-section::after {
-    content: "★";
-    font-size: 2em;
+    content: "★"; /* Star symbols */
+    font-size: 2em; /* Large stars */
+    position: absolute; /* Positioned absolutely within the collage section */
+    color: #FFD700; /* Gold color for the stars */
+}
+
+.collage-section::before {
+    top: -7px; /* Position star near the top */
+    left: -1px; /* Position star near the left */
+}
+
+.collage-section::after {
+    bottom: 10px; /* Position star near the bottom */
+    right: 10px; /* Position star near the right */
+}
+
+/* Image positions for different sections (volunteer, skills, projects) */
+#volunteer img, #skills img, #projects img {
     position: absolute;
-    color: #FFD700;
 }
 
 #volunteer img {
-    position:absolute;
     top: -5vw;
     right: -4vw;
     width: 16vw;
 }
 
 #skills img {
-    position:absolute;
     top: -5vw;
     right: -4vw;
     width: 16vw;
 }
 
 #projects img {
-    position:absolute;
     top: 10vw;
     right: 0vw;
     width: 16vw;
 }
 
-.collage-section::before {
-    top: -7px;
-    left: -1px;
+/* Grid layout for main content areas */
+#about, #deexplain, #skills, #projects, #volunteer {
+    grid-area: about; /* Each section is assigned to a grid area */
 }
 
-.collage-section::after {
-    bottom: 10px;
-    right: 10px;
+#drawing-board {
+    height: 200px; /* Fixed height for the drawing board */
 }
 
-#about {
-    grid-area: about;
+/* Dots used as visual markers */
+.dot {
+    height: 8px; /* Small circle height */
+    width: 8px; /* Small circle width */
+    border-radius: 4px; /* Fully rounded for a circle */
+    background: black; /* Black color */
+    position: absolute; /* Positioned absolutely within its parent */
 }
 
+/* Grid area setup */
 #deexplain {
-    grid-area: deexplain;
+    grid-area: deexplain; /* Assigned to the footer grid area */
 }
 
 #skills {
@@ -204,53 +236,38 @@ header img {
     grid-area: volunteer;
 }
 
-#drawing-board {
-    height: 200px;
-}
-
-.dot {
-    height: 8px;
-    width: 8px;
-    border-radius: 4px;
-    background: black;
-    position: absolute;
-}
-
-footer {
-    grid-area: footer;
-}
-
+/* Contact section with image */
 #contact {
-    position:relative;
+    position: relative; /* Positioned relative to its normal location */
 }
 
 #contact img {
-    position:absolute;
+    position: absolute;
     top: -10vw;
     right: -30vw;
     width: 40vw;
 }
-/* Mobile */
+
+/* Responsive adjustments for mobile screens */
 @media (max-width: 768px) {
     .name {
-        font-size: 3em;
+        font-size: 3em; /* Smaller font size for mobile */
     }
     
     .title-block {
-        font-size: 1.5em;
+        font-size: 1.5em; /* Smaller title block size for mobile */
     }
 }
 
-
-/* Web */
-@media (min-width: 1010px){
+/* Grid layout for larger screens (desktops) */
+@media (min-width: 1010px) {
     main {
-        display: grid;
-        background-color: rgb(198, 91, 207, 0.4);
-        grid-template-columns: auto auto;
-        grid-template-areas:
+        display: grid; /* Grid layout for main content */
+        background-color: rgba(198, 91, 207, 0.4); /* Semi-transparent background */
+        grid-template-columns: auto auto; /* Two-column layout */
+        grid-template-areas: /* Define grid layout for content sections */
             "about deexplain"
             "skills projects"
             "volunteer volunteer";
-    }    
+    }
 }

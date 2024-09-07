@@ -1,193 +1,196 @@
+/* Styling for the header container */
 header {
-    height: 40vw;
-    justify-content: center;
-    text-align: center;
+    height: 40vw; /* Sets the height of the header to 40% of the viewport width */
+    justify-content: center; /* Centers content horizontally */
+    text-align: center; /* Centers text inside the header */
 }
 
+/* Image 1 styling */
 #img1 {
-    position: absolute;
-    top: 1vh;
-    left: 75vw;
-    width: 40vw;
-    z-index: 4;
+    position: absolute; /* Positioned absolutely within the nearest positioned ancestor */
+    top: 1vh; /* Positioned 1% of the viewport height from the top */
+    left: 75vw; /* Positioned 75% of the viewport width from the left */
+    width: 40vw; /* Image width is 40% of the viewport width */
+    z-index: 4; /* Positioned on top of other elements with lower z-index values */
 }
 
+/* Image 2 styling */
 #img2 {
-    position: absolute;
-    top: 5vh;
-    width: 25vw;
-    z-index: 4;
+    position: absolute; /* Absolute positioning */
+    top: 5vh; /* 5% from the top of the viewport */
+    width: 25vw; /* Image width is 25% of the viewport width */
+    z-index: 4; /* Positioned above other elements except img1 */
 }
 
+/* Image 3 styling */
 #img3 {
-    position: absolute;
-    top: -2vh;
-    left: 68vw;
-    width: 28vw;
+    position: absolute; /* Absolute positioning */
+    top: -2vh; /* Positioned slightly above the top of the viewport */
+    left: 68vw; /* Positioned 68% from the left of the viewport */
+    width: 28vw; /* Image width is 28% of the viewport width */
 }
 
+/* Image 4 styling */
 #img4 {
-    position: absolute;
-    top: -2vh;
-    left: 10vw;
-    width: 20vw;
-    z-index: 1;
+    position: absolute; /* Absolute positioning */
+    top: -2vh; /* Positioned slightly above the viewport */
+    left: 10vw; /* Positioned 10% from the left of the viewport */
+    width: 20vw; /* Image width is 20% of the viewport width */
+    z-index: 1; /* Positioned behind other elements */
 }
 
+/* Image 5 styling */
 #img5 {
-    position: absolute;
-    top: 24vw;
-    left: 16vw;
-    width: 20vw;
-    z-index: 2;
+    position: absolute; /* Absolute positioning */
+    top: 24vw; /* Positioned 24% from the top of the viewport */
+    left: 16vw; /* Positioned 16% from the left of the viewport */
+    width: 20vw; /* Image width is 20% of the viewport width */
+    z-index: 2; /* Positioned behind img1 but in front of img4 */
 }
 
+/* Image 6 styling */
 #img6 {
-    position: absolute;
-    top: 2vw;
-    left: 24vw;
-    width: 13vw;
+    position: absolute; /* Absolute positioning */
+    top: 2vw; /* Positioned 2% from the top of the viewport */
+    left: 24vw; /* Positioned 24% from the left of the viewport */
+    width: 13vw; /* Image width is 13% of the viewport width */
 }
 
+/* Image 7 styling */
 #img7 {
-    position: absolute;
-    top: 23vw;
-    left: 58vw;
-    width: 20vw;
+    position: absolute; /* Absolute positioning */
+    top: 23vw; /* Positioned 23% from the top of the viewport */
+    left: 58vw; /* Positioned 58% from the left of the viewport */
+    width: 20vw; /* Image width is 20% of the viewport width */
 }
 
+/* Fixed positioning for header images */
 .headerImg {
-    position:fixed;
+    position: fixed; /* Keeps the image fixed in place during scrolling */
 }
 
+/* Hidden element with absolute positioning */
 #awesome {
-    display: none;
-    position: absolute;
-    z-index: 3;
+    display: none; /* Hidden by default */
+    position: absolute; /* Absolute positioning */
+    z-index: 3; /* Stacks this element above other elements but below img1 and img2 */
 }
 
+/* Styling for the name container */
 #name {
-    width:max-content;
-    position: relative;
-    top: 40%; left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 2;
+    width: max-content; /* The width adjusts based on the content inside */
+    position: relative; /* Positioned relative to its normal position */
+    top: 40%; /* Positioned 40% from the top */
+    left: 50%; /* Positioned at the center of the viewport horizontally */
+    transform: translate(-50%, -50%); /* Centers the element horizontally and vertically */
+    z-index: 2; /* Stacks behind some images */
 }
 
+/* Styling for the heading inside the name container */
 #name h1 {
-    font-family: 'Freakshow3', cursive; /*'Permanent Marker', cursive; */
-    font-size: 4em;
-    transform: rotate(-4deg);
-    background-color: rgb(255, 255, 255, 0.3);
+    font-family: 'Freakshow3', cursive; /* Font for the name */
+    font-size: 4em; /* Large font size */
+    transform: rotate(-4deg); /* Adds a slight rotation to the text */
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
 }
 
+/* Styling for the paragraph inside the name container */
 #name p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 1em;
-    background-color: #000;
-    color: #fff;
-    margin: 10px;
-    padding: 5px 15px;
-    display: inline-block;
-    transform: rotate(1deg);
+    font-family: 'Roboto', sans-serif; /* Sans-serif font for the paragraph */
+    font-weight: 700; /* Bold text */
+    font-size: 1em; /* Default font size */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    margin: 10px; /* Spacing around the paragraph */
+    padding: 5px 15px; /* Padding inside the paragraph */
+    display: inline-block; /* Ensures the element behaves like an inline-block */
+    transform: rotate(1deg); /* Adds a slight rotation */
 }
 
+/* Grid container for displaying photos */
 #photoGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-        "photo1 photo32 photo44 photo4"
-        "photo25 photo6 photo24 photo8"
-        "photo45 photo45 photo46 photo46"
-        "photo23 photo13 photo5 photo5"
-        "photo26 photo26 photo33 photo47"
-        "photo12 photo7 photo4 photo4"
-        "photo14 photo14 photo22 photo22"
-        "photo34 photo27 photo48 photo48"
-        "photo49 photo3 photo43 photo43"
-        "photo31 photo31 photo35 photo50"
-        "photo21 photo9 photo9 photo51"
-        "photo28 photo36 photo20 photo20"
-        "photo2 photo52 photo42 photo15"
-        "photo19 photo19 photo53 photo53"
-        "photo30 photo41 photo54 photo54"
-        "photo18 photo18 photo37 photo10"
-        "photo40 photo29 photo29 photo17"
-        "photo38 photo11 photo16 photo16";
-    justify-content: space-evenly;
-    gap: 2px;
-    position: relative;
-    margin: 20px;
+    display: grid; /* Uses a CSS grid layout */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 equal-width columns */
+    grid-template-rows: auto; /* Rows adjust automatically based on content */
+    justify-content: space-evenly; /* Spaces columns evenly */
+    gap: 2px; /* Small gap between grid items */
+    position: relative; /* Positioned relative to its normal flow */
+    margin: 20px; /* Space around the grid */
 }
 
+/* Styling for individual photo items */
 .photo-item {
-    min-height: 300px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    transition: transform 0.3s ease, z-index 0.3s ease;
-    transform: rotate(-0.5deg);
+    min-height: 300px; /* Minimum height for each photo */
+    background-size: cover; /* Ensures the background image covers the entire item */
+    background-position: center; /* Centers the background image */
+    position: relative; /* Positioned relative to its normal flow */
+    transition: transform 0.3s ease, z-index 0.3s ease; /* Adds a smooth transition effect on hover */
+    transform: rotate(-0.5deg); /* Slight rotation by default */
 }
 
+/* Hover effect for photo items */
 .photo-item:hover {
-    transform: scale(1.1);
-    z-index: 10;
+    transform: scale(1.1); /* Enlarges the photo item when hovered */
+    z-index: 10; /* Brings the photo item to the top when hovered */
 }
 
+/* Info box for images */
 .imgInfo {
-    background-color: rgba(255, 255, 255, 0.4);
-    justify-content: center;
-    align-items: center;
-    min-height: 40%;
-    display: flex;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4); /* Semi-transparent white background */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    min-height: 40%; /* Sets the minimum height to 40% of the container */
+    display: flex; /* Flexbox layout for centering content */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Fade-in effect when hovered */
+    padding: 20px; /* Padding inside the info box */
 }
 
+/* Hover effect for image info box */
 .photo-item:hover .imgInfo {
-    opacity: 1;
+    opacity: 1; /* Makes the info box visible on hover */
 }
 
+/* Overlay for lightbox effect */
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    z-index: 9;
+    position: fixed; /* Stays fixed on the viewport */
+    top: 0; /* Positioned at the top of the viewport */
+    left: 0; /* Positioned at the left of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    display: none; /* Hidden by default */
+    z-index: 9; /* Stacks above other content */
 }
 
+/* Active state for the overlay */
 .overlay.active {
-    display: block;
+    display: block; /* Makes the overlay visible */
 }
 
+/* Footer styling */
 footer {
-    z-index: 9;
+    z-index: 9; /* Stacks above other content */
 }
 
-/* Web */
-@media (min-width:768px) and (max-width:1010px){
+/* Media query for screens between 768px and 1010px wide */
+@media (min-width: 768px) and (max-width: 1010px) {
     #photoGrid {
-        grid-template-columns: 1fr 1fr 1fr;
-        margin: 15px;
+        grid-template-columns: 1fr 1fr 1fr; /* 3 columns on medium screens */
+        margin: 15px; /* Reduces margin */
     }
     #name {
-        width: 80vw;
+        width: 80vw; /* Adjusts width of the name container */
     }
 }
 
-/* Mobile */
+/* Media query for screens smaller than 768px (mobile) */
 @media (max-width: 768px) {
     #photoGrid {
-        grid-template-columns: 1fr 1fr;
-        margin: 10px;
+        grid-template-columns: 1fr 1fr; /* 2 columns on small screens */
+        margin: 10px; /* Further reduces margin */
     }
     #name {
-        width: 80vw;
+        width: 80vw; /* Adjusts width of the name container */
     }
 }
