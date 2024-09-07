@@ -6,14 +6,7 @@
     <title>Timna's Website Report</title>
     <link rel="stylesheet" href="../css/fonts.css"> <!-- External font styles -->
     <link rel="stylesheet" href="../css/styles.css"> <!-- External CSS styles -->
-    <style>
-        body {
-            margin: 2vw; /* Adds margin around the body for spacing */
-        }
-        div {
-            margin: 1vw; /* Adds margin to all divs for better spacing */
-        }
-    </style>
+    <link rel="stylesheet" href="../css/report.css"> <!-- External CSS styles -->
 </head>
 <body>
     <!-- Main heading for screen readers to understand the page's purpose -->
@@ -30,8 +23,7 @@
     <!-- Clearly labeling each section improves accessibility for screen readers -->
     <section id="inspiration" aria-labelledby="inspiration-heading">
         <h2 id="inspiration-heading">Inspiration</h2>
-        <p>State 3 professional portfolio sites (not advice articles or portfolio templates) that have inspired you when creating your website. What did you learn from them?</p>
-        <p>My design and functionality choices were influenced by several notable portfolio sites, each contributing unique elements to my project:</p>
+        <p>My design and functionality choices were influenced by several notable portfolio sites, each contributing unique elements to my project, the following are some examples of it:</p>
         <ul>
             <li><a href="https://www.joshloveslight.com/" aria-label="Visit Josh Loves Light's website">Josh Loves Light</a>: Inspired my photography section's gallery with a clean layout and engaging hover effects.</li>
             <li><a href="https://www.book-by-its-cover.com/" aria-label="Visit Book by Its Cover website">Book by Its Cover</a>: The grid layout inspired the structure of my educational materials section.</li>
@@ -44,9 +36,24 @@
     <section id="accessibility" aria-labelledby="accessibility-heading">
         <h2 id="accessibility-heading">Accessibility</h2>
         <ul>
-            <li><strong>Alternative Text:</strong> Alt text provided for all images to support screen reader users.</li>
-            <li><strong>Color Contrast:</strong> High contrast colors ensure better visibility for users with visual impairments.</li>
-            <li><strong>Keyboard Navigation:</strong> Full keyboard navigation for users unable to use a mouse.</li>
+            <!-- Descriptive Alt Text for Images -->
+            <li><strong>Descriptive Alt Text for Images:</strong> 
+                All images on the website are provided with descriptive <code>alt</code> text, making them accessible to screen readers. This ensures that users who are visually impaired can still understand the context or content of images. Additionally, decorative images that do not add meaning are marked with empty <code>alt=""</code> attributes to be ignored by screen readers, reducing unnecessary noise for users.
+            </li>
+            <!-- Semantic HTML for Structure -->
+            <li><strong>Semantic HTML for Structure:</strong> 
+                The use of semantic HTML elements, such as <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code>, provides clear meaning and structure to assistive technologies like screen readers. This allows users with visual impairments to navigate the content in a logical and meaningful order. Additionally, it improves the overall SEO, making the site more accessible to search engines.
+            </li>
+
+            <!-- ARIA (Accessible Rich Internet Applications) Attributes -->
+            <li><strong>ARIA Attributes:</strong> 
+                ARIA (Accessible Rich Internet Applications) attributes are used throughout the website to enhance the interaction experience for users with disabilities. For example, roles and states, such as <code>aria-labelledby</code> and <code>aria-hidden</code>, help screen readers understand the purpose and status of elements. This ensures that dynamic elements, like interactive menus or forms, are accessible and understandable to users who rely on assistive technologies.
+            </li>
+
+            <!-- High Contrast Colors and Readability -->
+            <li><strong>High Contrast Colors and Readability:</strong> 
+                The website uses high-contrast color schemes to improve readability for users with low vision or color blindness. Text and background colors are chosen carefully to ensure they meet Web Content Accessibility Guidelines (WCAG) standards for contrast ratios, which helps all users, especially those with visual impairments, read content easily without strain.
+            </li>
         </ul>
     </section>
 
@@ -54,9 +61,30 @@
     <section id="usability" aria-labelledby="usability-heading">
         <h2 id="usability-heading">Usability</h2>
         <ul>
-            <li><strong>Consistent Navigation:</strong> Ensures a smooth experience by keeping navigation elements consistent across pages.</li>
-            <li><strong>Responsive Design:</strong> Optimized for various devices, ensuring it looks good on desktop, tablets, and smartphones.</li>
-            <li><strong>ARIA Landmarks:</strong> Use of ARIA roles for screen readers to understand and navigate the page structure easily.</li>
+            <!-- User-Friendly Navigation -->
+            <li><strong>User-Friendly Navigation:</strong> 
+                The website features a clear and simple navigation structure that is easy for users to understand. The top navigation menu is fixed, allowing users to access key sections of the site without having to scroll back to the top. For mobile users, the navigation adapts to a vertical format for easier tapping and scrolling. This ensures users can easily move between different sections, regardless of their device.
+            </li>
+
+            <!-- Accessibility Features -->
+            <li><strong>Accessibility Features:</strong> 
+                The site incorporates several accessibility best practices to make it usable for a broader audience, including those with disabilities. ARIA labels are used to enhance navigation for screen readers, ensuring visually impaired users can interact with the content. The site also features high-contrast text for readability, appropriate alternative text for images, and semantic HTML elements to improve the browsing experience for users with cognitive impairments.
+            </li>
+
+            <!-- Clear Visual Hierarchy -->
+            <li><strong>Clear Visual Hierarchy:</strong> 
+                The design implements a clear visual hierarchy, helping users identify important information quickly. Large, bold headings, contrasting colors, and appropriate spacing guide the user's eye through the page in a logical order. This hierarchy ensures that key content, such as project descriptions and contact information, stands out and is easily scannable.
+            </li>
+
+            <!-- Clear and Concise Content -->
+            <li><strong>Clear and Concise Content:</strong> 
+                The website’s content is written in a straightforward and concise manner, making it easy for users to digest. Important information, such as project descriptions and contact details, is presented clearly and without unnecessary jargon. This enhances the overall usability by allowing users to quickly find the information they need without getting overwhelmed by text-heavy pages.
+            </li>
+
+            <!-- Interactive Elements and Feedback -->
+            <li><strong>Interactive Elements and Feedback:</strong> 
+                Interactive elements, such as hover effects on project images and buttons, provide immediate feedback to users. These subtle animations and transitions improve the usability by making the interface feel more dynamic and engaging. Users are visually cued when an action is possible, such as clicking a button or viewing additional information, reducing uncertainty and improving the overall interaction experience.
+            </li>
         </ul>
     </section>
 
@@ -64,9 +92,35 @@
     <section id="learning" aria-labelledby="learning-heading">
         <h2 id="learning-heading">Learning</h2>
         <ul>
-            <li><strong>JSON Integration:</strong> Learned how to integrate dynamic content using JSON for displaying data.</li>
-            <li><strong>Handlebars.js:</strong> Used Handlebars.js to create dynamic templates, overcoming initial challenges to streamline content rendering.</li>
-            <li><strong>CSS Z-Index:</strong> Mastered CSS z-index properties to control element stacking order, improving visual layering and layout control.</li>
+            <!-- JSON Integration Learning -->
+        <li><strong>JSON Integration:</strong> 
+            I learned how to use JSON (JavaScript Object Notation) to store and retrieve data dynamically on the website. This allowed me to separate the content from the HTML structure, making it easier to update and manage the data without altering the core HTML. By loading JSON data through JavaScript, I was able to create a dynamic photo gallery and project listing section. This also improved website performance by minimizing hardcoded content.
+        </li>
+
+        <!-- Handlebars.js Learning -->
+        <li><strong>Handlebars.js Templating:</strong> 
+            I explored Handlebars.js as a templating engine for rendering dynamic content on the site. It was a challenge at first to grasp the syntax and logic, but once I understood how to pass variables and use conditionals/loops within the templates, it greatly improved the workflow. I applied this to generate project cards dynamically based on the JSON data. The modular nature of Handlebars.js helped me maintain cleaner and more reusable code, separating the content logic from the presentation.
+        </li>
+
+        <!-- CSS Z-Index and Layering -->
+        <li><strong>CSS Z-Index and Layering:</strong> 
+            While working on the visual design, especially the overlapping image gallery, I had to master the use of CSS `z-index` to control how elements stack on top of each other. Understanding how z-index interacts with the element’s positioning context (like relative, absolute, fixed) was key to achieving the desired visual effects. This was particularly useful for creating layered sections with images and text elements that required careful placement without disrupting the flow of the content.
+        </li>
+
+        <!-- Responsive Web Design Learning -->
+        <li><strong>Responsive Web Design:</strong> 
+            Creating a fully responsive design was one of the primary goals. I learned how to use media queries effectively to adjust layouts, font sizes, and images depending on the user's screen size. This allowed the website to adapt to different devices (desktop, tablet, and mobile) without losing functionality or aesthetics. I explored grid layouts, which helped simplify the alignment and resizing of elements across various screen sizes.
+        </li>
+
+        <!-- Accessibility Considerations -->
+        <li><strong>Accessibility Best Practices:</strong> 
+            I gained a deeper understanding of accessibility standards, such as ensuring proper color contrast ratios for readability, providing alternative text for images, and using semantic HTML tags. I also learned how to implement ARIA (Accessible Rich Internet Applications) attributes for enhanced screen reader support, making the website more navigable for users with disabilities.
+        </li>
+
+        <!-- AI Utilization -->
+        <li><strong>AI Usability:</strong> 
+            I gained a deeper understanding on how to utilize AI tools, like Chat GPT and Claude, on the process of reviewing code, on expanding the commentary and to highlight accessibility points of improovement.
+        </li>
         </ul>
     </section>
 
@@ -86,37 +140,37 @@
         <h3>Images:</h3>
         <ul>
             <li><a href="https://www.goodfreephotos.com/vector-images/girl-power-vector-clipart.png.php">Good Free Photos</a></li>
-            <li><a href="https://www.pngegg.com/en/png-drrtj/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bllju#google_vignettes">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bypxz/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bdckz/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bwrer/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bzppz/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bvsyx/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-ehxeo/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bbqyn/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bmois/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bbixa/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bxjnm/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bqcmz/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bumkr/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-neowe/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-eiaxu/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-blbmg/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-ndrjy/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-mfkak/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-nxptc/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-plhjt/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-zywqo/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-tfhme/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bkmnc/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-fgylt/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-pndnp/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-cdgan/download#google_vignette">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-wlyjb/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-wlygd/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-yjldx/download">Free Image PNG Website</a></li>
-            <li><a href="https://www.pngegg.com/en/png-bzdmb/download">Free Image PNG Website</a></li>
+            <li><a href="https://www.pngegg.com/en/png-drrtj/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bllju#google_vignettes">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bypxz/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bdckz/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bwrer/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bzppz/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bvsyx/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-ehxeo/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bbqyn/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bmois/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bbixa/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bxjnm/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bqcmz/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bumkr/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-neowe/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-eiaxu/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-blbmg/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-ndrjy/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-mfkak/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-nxptc/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-plhjt/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-zywqo/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-tfhme/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bkmnc/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-fgylt/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-pndnp/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-cdgan/download#google_vignette">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-wlyjb/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-wlygd/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-yjldx/download">Free Image PNG</a></li>
+            <li><a href="https://www.pngegg.com/en/png-bzdmb/download">Free Image PNG</a></li>
 
         </ul>
         <h3>Fonts:</h3>
@@ -139,7 +193,7 @@
         </ul>
         <h3>Data Resources:</h3>
         <ul>
-            <li><a href="https://unstats.un.org/sdgs/files/report/2024/secretary-general-sdg-report-2024--EN.pdf">UN data</a></li>
+            <li><a href="https://unstats.un.org/sdgs/files/report/2024/secretary-general-sdg-report-2024--EN.pdf">UN Data</a></li>
             <li><a href="https://data.worldbank.org/indicator/SL.TLF.TOTL.IN">World Bank Data</a></li>
         </ul>
     </section>

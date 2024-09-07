@@ -1,0 +1,30 @@
+body {
+    margin: 2vw; /* Adds margin around the body for spacing. 
+                    This ensures the content isn't flush with the edges of the screen, giving a cleaner layout. */
+}
+
+div {
+    margin: 1vw; /* Adds margin to all divs to create space between each div and its surroundings. */
+    width: 100%; /* Sets the width of divs to 100% of their parent container, allowing divs to span the full available width. */
+    position: relative; /* Ensures that any absolutely positioned children inside the div are positioned relative to this div. */
+    height: 5vh; /* Sets the height of each div to 5% of the viewport height, maintaining consistent proportions across screen sizes. */
+}
+
+div h1 {
+    margin: auto; /* Centers the <h1> element horizontally and vertically if possible. */
+    position: absolute; /* Allows positioning the <h1> absolutely within the parent div (relative to the div's position). */
+    left: 50%; /* Moves the <h1> to the horizontal center of the parent div (50% from the left edge). */
+    transform: translate(-50%, -50%); /* Adjusts the positioning of the <h1> by 50% of its own width and height to fully center it within the div. */
+}
+
+section {
+    padding: 2vw; /* Adds padding inside the section for internal spacing around the content. */
+    margin: 2vw; /* Adds margin outside the section to space it from surrounding elements. */
+    border-style: dashed; /* Sets a dashed border style around the section, adding a visual distinction between sections. */
+    background-color: rgba(240, 248, 255, 0.3); /* Adds a light, semi-transparent background color to the section for subtle highlighting. */
+}
+
+a:hover {
+    color: blue; /* Changes the link color to blue when the user hovers over it, providing visual feedback. */
+    font-size: large; /* Increases the font size of the link when hovered, making it more prominent and interactive. */
+}
