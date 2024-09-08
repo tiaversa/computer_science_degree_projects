@@ -28,3 +28,7 @@ a:hover {
     color: blue; /* Changes the link color to blue when the user hovers over it, providing visual feedback. */
     font-size: large; /* Increases the font size of the link when hovered, making it more prominent and interactive. */
 }
+
+#appendices img {
+    width: 87.5vw;
+}
