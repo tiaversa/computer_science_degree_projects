@@ -18,14 +18,14 @@ header {
 
 /* Individual image positions for the collage layout */
 /* These images are likely part of a visual collage or design overlay */
-#img1 {
+ #img1 { /*Wall texture */
     position: absolute; /* Absolutely positioned relative to the .image_box */
     top: -5vw; /* Positioned slightly above the top of the viewport */
     left: -5vw; /* Positioned slightly to the left of the viewport */
     width: 110vw; /* Image width slightly exceeds the viewport width */
 }
 
-#img2 {
+#img2 { /*Drawing of a women dancing*/
     position: absolute; /* Positioned on top of other content */
     top: -6vw; /* Positioned higher than img1 */
     left: -5vw; /* Same left alignment as img1 */
@@ -33,30 +33,29 @@ header {
     z-index: 2; /* Stacked on top of img1 */
 }
 
-#img3 {
+#img3 {/*Hand with a universe shadown*/
     position: absolute;
     top: 0vw; /* Align to the top */
     right: -9vw; /* Overflow to the right of the viewport */
     width: 43vw; /* Smaller image */
 }
 
-#img4, #img5, #img6, #img7 {
-    /* Similar absolute positioning for other images */
-}
-
-#img4 {
+#img4 {/*Girl power sticker*/
+    position: absolute;
     top: 0vw;
     right: -3vw;
     width: 35vw;
 }
 
-#img5 {
+#img5 {/*Feminism symble sticker*/
+    position: absolute;
     top: 0vw;
     left: 2vw;
     width: 10vw;
 }
 
-#img6 {
+#img6 {/*What you think sticker*/
+    position: absolute;
     top: 33vw;
     left: 21vw;
     width: 10vw;
@@ -64,7 +63,8 @@ header {
     z-index: 3; /* Positioned on top of lower layers */
 }
 
-#img7 {
+#img7 {/*Couple driving into the moon*/
+    position: absolute;
     top: 18vw;
     left: -10vw;
     width: 35vw;
@@ -120,7 +120,7 @@ header img {
     background-color: #fff; /* White background */
     padding: 20px; /* Inner padding */
     box-shadow: 5px 5px 0 rgba(0,0,0,0.1); /* Light shadow for depth */
-    min-height: 100vh; /* Full viewport height */
+    min-height: 50vh; /* Full viewport height */
     max-width: 1000px; /* Limit width for better readability */
     margin: 20px; /* Space around the section */
     z-index: 10; /* Layered above other elements */
