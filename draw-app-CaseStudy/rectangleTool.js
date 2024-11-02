@@ -17,8 +17,22 @@ function RectangleTool() {
             }
             else
             {
-                width = mouseX - startMouseX;
-                height = mouseX - startMouseX;
+                if (startMouseX < mouseX)
+                {
+                    width = -1 * (startMouseX - mouseX);
+                }
+                else
+                {
+                    width = mouseX - startMouseX;
+                }
+                if (beginMouseY < mouseY)
+                {
+                    height = mouseY - beginMouseY;
+                }
+                else
+                {
+                    height = mouseY - beginMouseY;
+                }
                 rect(startMouseX, beginMouseY, width, height);
                 
             }
