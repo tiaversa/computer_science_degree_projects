@@ -1,10 +1,12 @@
-function RectangleTool(){
-	this.icon = "assets/rectangle-tool.svg";
-	this.name = "Rectangle Tool";
+function RectangleTool() {
+    this.icon = "assets/rectangle-tool.svg";
+    this.name = "Rectangle Tool";
 
     var startMouseX = -1;
-	var beginMouseY = -1;
-	var drawing = false;
+    var beginMouseY = -1;
+    var drawing = false;
+    var width = 0;
+    var height = 0;
 
 	this.draw = function(){
 		if(mouseIsPressed){
@@ -15,15 +17,17 @@ function RectangleTool(){
             }
             else
             {
-                rect(startMouseX, beginMouseY, mouseX - startMouseX , mouseY - beginMouseY);
+                width = mouseX - startMouseX;
+                height = mouseX - startMouseX;
+                rect(startMouseX, beginMouseY, width, height);
+                
             }
         }
 		else
         {
             drawing = false;
-            console.log(drawing);
 			startMouseX = -1;
 			beginMouseY = -1;
 		}
-	}
+    };
 }

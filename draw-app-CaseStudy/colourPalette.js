@@ -1,9 +1,9 @@
 //Displays and handles the colour palette.
 function ColourPalette() {
 	//a list of web colour strings
-	this.colours = ["black", "silver", "gray", "white", "maroon", "red", "purple",
-		"orange", "pink", "fuchsia", "green", "lime", "olive", "yellow", "navy",
-		"blue", "teal", "aqua"
+	this.colours = ["black", "silver", "gray", "white", "maroon", "red", "purple", 
+		"orange", "plum", "IndianRed", "pink", "fuchsia", "green", "lime", "olive",
+		"yellow", "navy", "blue", "teal", "aqua", "orchid", "LightBlue", "Aquamarine","linen"
 	];
 	//make the start colour be black
 	this.selectedColour = "black";

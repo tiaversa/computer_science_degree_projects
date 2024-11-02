@@ -4,6 +4,8 @@ function ElipseTool(){
 
 	var startMouseX = -1;
 	var beginMouseY = -1;
+    var width = 0;
+    var height = 0;
 
 	this.draw = function(){
 		if(mouseIsPressed){
@@ -14,13 +16,15 @@ function ElipseTool(){
             }
             else
             {
-                ellipse(startMouseX, beginMouseY, mouseX - startMouseX, mouseX - startMouseX);
+                width = mouseX - startMouseX;
+                height = mouseX - startMouseX;
+                ellipse(startMouseX, beginMouseY, width, height);
+                
             }
         }
 		else
         {
             drawing = false;
-            console.log(drawing);
 			startMouseX = -1;
 			beginMouseY = -1;
 		}
