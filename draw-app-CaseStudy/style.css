@@ -75,3 +75,12 @@ html, body {
 .header {
   background-color: #999;
 }
+
+.transparency-control {
+    margin: 10px 0;
+}
+
+.transparency-control input[type="range"] {
+    width: 100px;
+    vertical-align: middle;
+}
