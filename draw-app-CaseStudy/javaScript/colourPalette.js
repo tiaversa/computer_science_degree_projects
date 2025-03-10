@@ -45,55 +45,50 @@ function ColourPalette() {
 		let g = green(col);
 		let b = blue(col);
 		
-		// Apply RGB values with transparency
 		fill(r, g, b, transparency); 
 		stroke(r, g, b, transparency);
 		strokeWeight(lineSize);
 	}
 
 	var colourClick = function() {
-		//remove the old border
 		var current;
 		if (self.selectedColour.startsWith('rgb')) {
-			// If it's a random color, remove border from random swatch
 			current = select("#randomSwatch");
 		} else {
 			current = select("#" + self.selectedColour + "Swatch");
 		}
 		current.style("border", "0");
-
-		//get the new colour from the id of the clicked element
+		
 		var c = this.id().split("Swatch")[0];
 		
-		//set the selected colour and fill and stroke with transparency
-		self.selectedColour = c;
-		self.updateCurrentColor(); // Use the new function to update color with transparency
+		// Generate a random color when the random swatch is clicked
+		if (c === "random") {
+			// Generate random RGB values
+			let r = floor(random(256));
+			let g = floor(random(256));
+			let b = floor(random(256));
+			self.selectedColour = `rgb(${r},${g},${b})`;
+		} else {
+			self.selectedColour = c;
+		}
 		
-		//add a new border to the selected colour
+		self.updateCurrentColor();
+		
 		this.style("border", "2px solid blue");
 	}
 
-	//load in the colours
 	this.loadColours = function() {
 		this.populateOptions();
-		//set the fill and stroke properties to be black at the start of the programme
-		//running
 		fill(this.colours[0]);
 		stroke(this.colours[0]);
-		strokeWeight(this.getLineSize()); // Set initial strokeWeight based on input value
-		//for each colour create a new div in the html for the colourSwatches
+		strokeWeight(this.getLineSize());
 		for (var i = 0; i < this.colours.length; i++) {
 			var colourID = this.colours[i] + "Swatch";
-
-			//using p5.dom add the swatch to the palette and set its background colour
-			//to be the colour value.
 			var colourSwatch = createDiv()
 			colourSwatch.class('colourSwatches');
 			colourSwatch.id(colourID);
 
 			select(".colourPalette").child(colourSwatch);
-			
-			// Create rainbow gradient background for random swatch
 			if (this.colours[i] === "random") {
 				select("#" + colourID).style("background", "linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet)");
 			} else {
@@ -105,15 +100,12 @@ function ColourPalette() {
 
 		select(".colourSwatches").style("border", "2px solid blue");
 	};
-	//call the loadColours function now it is declared
 	this.loadColours();
 	
-	// Add event listener for line size changes
 	select('#textSize').input(function() {
 		strokeWeight(self.getLineSize());
 	});
 	
-	// Add event listener for transparency changes
 	select('#transparencyInput').input(function() {
 		self.updateCurrentColor();
 	});

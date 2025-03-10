@@ -1,8 +1,9 @@
-function mirrorDrawTool() {
-	this.name = "mirrorDraw";
-	this.icon = "assets/mirrorDraw.jpg";
-
-	//which axis is being mirrored (x or y) x is default
+function ScissorTool() {
+    // Set an icon and a name for the object
+    this.icon = "assets/scissor-tool.svg";
+    this.name = "scissors";
+    
+    //which axis is being mirrored (x or y) x is default
 	this.axis = "x";
 	//line of symmetry is halfway across the screen
 	this.lineOfSymmetry = width / 2;
@@ -120,19 +121,10 @@ function mirrorDrawTool() {
 	//toggle the line of symmetry between horizonatl to vertical
 	this.populateOptions = function() {
 		select(".options").html(
-			"<button id='directionButton'>Make Horizontal</button>");
+			"<button id='directionButton'>Select Area</button>");
 		// 	//click handler
 		select("#directionButton").mouseClicked(function() {
-			var button = select("#" + this.elt.id);
-			if (self.axis == "x") {
-				self.axis = "y";
-				self.lineOfSymmetry = height / 2;
-				button.html('Make Vertical');
-			} else {
-				self.axis = "x";
-				self.lineOfSymmetry = width / 2;
-				button.html('Make Horizontal');
-			}
+			console.log("clicked");
 		});
 	};
 }

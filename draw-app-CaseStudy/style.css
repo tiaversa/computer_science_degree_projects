@@ -44,24 +44,33 @@ html, body {
 	padding: 15px;
 }
 
+.empty{
+	grid-area: empty;
+}
+
+.colourPaletteConfig{
+	grid-area: colourPaletteConfig;
+	padding: 15px;
+}
+
 .colourSwatches{
 	box-sizing: border-box;
-	width: 40px;
-	height: 40px;
-	max-height: 40px;
-	max-width: 40px;
-	margin: 5px;
+	width: 30px;
+	height: 30px;
+	max-height: 30px;
+	max-width: 30px;
+	margin: 2px;
 }
 
 .wrapper {
 	display: grid;
 	height: 100%;
-	grid-template-columns: 70px 360px  minmax(500px, 1fr);
+	grid-template-columns: 70px 1fr 1fr minmax(300px, 1fr);
 	grid-template-rows: 35px minmax(500px, 1fr) 160px;
 	grid-template-areas:
-			"header header header"
-			"sidebar content content"
-			"colourP colourP options";
+			"header header header header"
+			"sidebar content content content"
+			"empty options colourPaletteConfig colourP";
 	background-color: #fff;
 	color: #444;
 }
@@ -69,7 +78,7 @@ html, body {
 .box {
   background-color: salmon;
   color: #fff;
-  font-size: 150%;
+  font-size: 100%;
 }
 
 .header {
