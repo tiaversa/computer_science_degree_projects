@@ -107,18 +107,13 @@ function ImageTool() {
     // Draw function
     this.draw = function() {
         if (loadedImage && placing) {
-            handleImagePlacement();
+            if (mouseIsPressed) {
+                handleMousePressed();
+            } else {
+                handleMouseReleased();
+            }
         }
     };
-    
-    // Handle the image placement logic
-    function handleImagePlacement() {
-        if (mouseIsPressed) {
-            handleMousePressed();
-        } else {
-            handleMouseReleased();
-        }
-    }
     
     // Handle mouse pressed events during image placement
     function handleMousePressed() {

@@ -1,5 +1,6 @@
 //Displays and handles the colour palette.
 function ColourPalette() {
+	//set properties for the colour palette
 	this.transparency = 255;
 	//a list of web colour strings
 	this.colours = ["black", "silver", "gray", "white", "maroon", "red", "purple", 
@@ -10,6 +11,7 @@ function ColourPalette() {
 	//make the start colour be black
 	this.selectedColour = "black";
 
+	//creates and populates the options panel with controls for line size and transparency
 	this.populateOptions = function() {
 		// Add transparency control to options
         select(".colourPaletteConfig").html(
@@ -24,17 +26,17 @@ function ColourPalette() {
 
 	var self = this;
 
-	// Add helper function to get transparency value
+	// retrieves the current transparency value from the slider input
 	this.getTransparency = function() {
 		return parseInt(select('#transparencyInput').value()) || 255;
 	}
 
-	// Add helper function to get line size value
+	// retrieves the current line size value from the number input
 	this.getLineSize = function() {
 		return parseInt(select('#textSize').value()) || 2;
 	}
 
-	// Add function to update the current color with transparency
+	// updates the current drawing color with the selected color and transparency
 	this.updateCurrentColor = function() {
 		var transparency = this.getTransparency();
 		var lineSize = this.getLineSize();
@@ -50,6 +52,7 @@ function ColourPalette() {
 		strokeWeight(lineSize);
 	}
 
+	//event handler for when a colour swatch is clicked
 	var colourClick = function() {
 		var current;
 		if (self.selectedColour.startsWith('rgb')) {
@@ -77,6 +80,7 @@ function ColourPalette() {
 		this.style("border", "2px solid blue");
 	}
 
+	//creates the colour swatches and adds them to the palette
 	this.loadColours = function() {
 		this.populateOptions();
 		fill(this.colours[0]);
@@ -100,8 +104,11 @@ function ColourPalette() {
 
 		select(".colourSwatches").style("border", "2px solid blue");
 	};
+	
+	//initialize the colour palette
 	this.loadColours();
 	
+	//add event listeners for the line size and transparency controls
 	select('#textSize').input(function() {
 		strokeWeight(self.getLineSize());
 	});

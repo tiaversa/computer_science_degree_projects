@@ -25,7 +25,6 @@ The application includes a variety of drawing and editing tools:
 7. **Text Tool**: Add text to your drawings
 8. **Image Tool**: Import and place images on the canvas
 9. **Mirror Draw Tool**: Draw with a mirrored effect
-10. **Scissor Tool**: Cut and manipulate parts of your drawing
 
 ## Color, Line Size, and Transparency Implementation
 

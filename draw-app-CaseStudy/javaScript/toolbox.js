@@ -1,8 +1,6 @@
 //container object for storing the tools. Functions to add new tools and select a tool
 function Toolbox() {
-
 	var self = this;
-
 	this.tools = [];
 	this.selectedTool = null;
 
@@ -12,7 +10,6 @@ function Toolbox() {
 		for (var i = 0; i < items.length; i++) {
 			items[i].style('border', '0')
 		}
-
 		var toolName = this.id().split("sideBarItem")[0];
 		self.selectTool(toolName);
 

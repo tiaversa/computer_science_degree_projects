@@ -80,10 +80,39 @@ function ShapeTool() {
                 
                 //handle the case where the user drags up or left
                 if (bounds.reflectX || bounds.reflectY) {
-                    translate(bounds.drawX + (bounds.reflectX ? bounds.width : 0), 
-                             bounds.drawY + (bounds.reflectY ? bounds.height : 0));
-                    scale(bounds.reflectX ? -1 : 1, bounds.reflectY ? -1 : 1);
-                    translate(-(bounds.drawX), -(bounds.drawY));
+                    // Calculate translation offsets
+                    let translateX = bounds.drawX;
+                    let translateY = bounds.drawY;
+                    
+                    // Add width/height offset if reflecting
+                    if (bounds.reflectX) {
+                        translateX += bounds.width;
+                    }
+                    if (bounds.reflectY) {
+                        translateY += bounds.height;
+                    }
+                    
+                    // Move to reflection point
+                    translate(translateX, translateY);
+                    
+                    // Scale for reflection
+                    let scaleX;
+                    if (bounds.reflectX) {
+                        scaleX = -1;
+                    } else {
+                        scaleX = 1;
+                    }
+
+                    let scaleY;
+                    if (bounds.reflectY) {
+                        scaleY = -1;
+                    } else {
+                        scaleY = 1;
+                    }
+                    scale(scaleX, scaleY);
+                    
+                    // Move back to original position
+                    translate(-bounds.drawX, -bounds.drawY);
                 }
 
                 // Draw the selected shape using the new positions

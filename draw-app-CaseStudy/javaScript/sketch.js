@@ -26,7 +26,6 @@ function setup() {
 	toolbox.addTool(new mirrorDrawTool());
 	toolbox.addTool(new ShapeTool());
 	toolbox.addTool(new ImageTool());
-	toolbox.addTool(new ScissorTool());
 	toolbox.addTool(new TextTool());
 	background(255);
 
