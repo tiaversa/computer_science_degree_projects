@@ -4,33 +4,35 @@
     <script src="lib/p5.min.js"></script>
     <script src="lib/p5.dom.js"></script>
 
-    <script src="sketch.js"></script>
+    <script src="javaScript/sketch.js"></script>
 
     <!-- add extra scripts below -->
-    <script src="toolbox.js"></script>
-    <script src="colourPalette.js"></script>
-    <script src="helperFunctions.js"></script>
-
-    <script src="rectangleTool.js"></script>
-    <script src="elipseTool.js"></script>
-    <script src="sprayCanTool.js"></script>
-    <script src="freehandTool.js"></script>
-    <script src="lineToTool.js"></script>
-    <script src="mirrorDrawTool.js"></script>
-
+    <script src="javaScript/toolbox.js"></script>
+    <script src="javaScript/colourPalette.js"></script>
+    <script src="javaScript/helperFunctions.js"></script>
+    <script src="javaScript/imageTool.js"></script>
+    <script src="javaScript/textTool.js"></script>
+    <script src="javaScript/shapeTool.js"></script>
+    <script src="javaScript/sprayCanTool.js"></script>
+    <script src="javaScript/freehandTool.js"></script>
+    <script src="javaScript/lineToTool.js"></script>
+    <script src="javaScript/mirrorDrawTool.js"></script>
+    <title>Timna's Draw App</title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
   	<div class="wrapper">
       <div class="box header">
-        My Drawing App
+        Timna's Drawing App
         <button id="clearButton">Clear</button>
         <button id="saveImageButton">Save Image</button>
       </div>
       <div class="box" id="sidebar"></div>
       <div id="content"></div>
       <div class="box colourPalette"></div>
+      <div class="box colourPaletteConfig"></div>
       <div class="box options"></div>
+      <div class="box empty"></div>
 	</div>
   </body>
 </html>

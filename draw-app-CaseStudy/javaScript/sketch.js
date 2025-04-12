@@ -23,9 +23,10 @@ function setup() {
 	toolbox.addTool(new FreehandTool());
 	toolbox.addTool(new LineToTool());
 	toolbox.addTool(new SprayCanTool());
-	toolbox.addTool(new ElipseTool());
-	toolbox.addTool(new RectangleTool());
 	toolbox.addTool(new mirrorDrawTool());
+	toolbox.addTool(new ShapeTool());
+	toolbox.addTool(new ImageTool());
+	toolbox.addTool(new TextTool());
 	background(255);
 
 }
