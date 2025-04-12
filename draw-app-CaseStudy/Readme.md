@@ -60,3 +60,32 @@ For future versions, I plan to add:
 
 This project demonstrates my understanding of JavaScript, DOM manipulation, event handling, and interactive web application development using the p5.js library.
 
+## Development Environment Setup with Dev Container
+
+### Prerequisites
+1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+2. Install [Visual Studio Code](https://code.visualstudio.com/)
+3. Install the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) in VS Code
+
+### Steps to Run in Dev Container
+1. Open the project folder in VS Code
+2. Click the green button in the bottom-left corner of VS Code (or press F1 and select "Dev Containers: Reopen in Container")
+3. Wait for the container to build and start (this may take a few minutes the first time)
+4. Once inside the container, open a terminal and run:
+   ```bash
+   npm install
+   npm start
+   ```
+5. The application will be available at `http://localhost:3000`
+
+### Container Features
+- Node.js development environment
+- All necessary dependencies pre-installed
+- Consistent development environment across different machines
+- Isolated from your local system
+
+### Troubleshooting
+- If the container fails to build, ensure Docker Desktop is running
+- Check Docker logs for detailed error messages
+- Try rebuilding the container using "Dev Containers: Rebuild Container"
+
