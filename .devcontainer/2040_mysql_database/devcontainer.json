@@ -1,0 +1,7 @@
+{
+    "name": "2040 MySQL Database",
+    "dockerComposeFile": "${localWorkspaceFolder}/2040_data_newtworks_/docker-compose.yml",
+    "service": "db",
+    "shutdownAction": "none",
+    "workspaceFolder": "/usr/src/app"
+}

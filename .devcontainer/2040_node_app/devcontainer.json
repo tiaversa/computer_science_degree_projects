@@ -1,0 +1,7 @@
+{
+    "name": "2040 Node App",
+    "dockerComposeFile": "${localWorkspaceFolder}/2040_data_newtworks_/docker-compose.yml",
+    "service": "app",
+    "shutdownAction": "none",
+    "workspaceFolder": "/usr/src/app"
+}
