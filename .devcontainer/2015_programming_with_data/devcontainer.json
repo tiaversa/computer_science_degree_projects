@@ -1,0 +1,28 @@
+{
+    "name": "2015 Python Jupyter Development",
+    "build": {
+        "dockerfile": "${localWorkspaceFolder}/2015_programming_with_data/Dockerfile",
+        "context": "${localWorkspaceFolder}/2015_programming_with_data"
+    },
+    "workspaceMount": "source=${localWorkspaceFolder}/2015_programming_with_data,target=/workspace,type=bind,consistency=cached",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-toolsai.jupyter",
+                "ms-python.vscode-pylance"
+            ],
+            "settings": {
+                "python.defaultInterpreterPath": "/usr/local/bin/python",
+                "python.linting.enabled": true,
+                "python.linting.pylintEnabled": true,
+                "jupyter.jupyterServerType": "local",
+                "jupyter.notebookFileRoot": "/workspace"
+            }
+        }
+    },
+    "forwardPorts": [8888],
+    "postCreateCommand": "pip install jupyter pandas numpy matplotlib seaborn",
+    "remoteUser": "vscode"
+} 
